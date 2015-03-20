@@ -2,7 +2,7 @@ body {
 	font-family: Arial, sans-serif;
 	background-color: pink;
 	width: 80%;
-	margin: 0 auto;
+	margin: 50px auto;
 }
 
 a {
@@ -11,26 +11,26 @@ a {
 	font-style: italicized;
 }
 
-#theTable {
-	color: white;
-	background-color: orange;
-	width: 80%;
-	margin: 0 auto;
-}
-
 .centered {
 	margin: 0 auto;
 	width: 100%;
 }
 
+#theTable {
+	background-color: #FF414C;
+	color: white;
+	width: 50%;
+	margin: 30px auto;
+}
+
 #theTable td {
 	background-color: #FFF;
-	color: red;
-	text-align: right;
+	text-align: center;
+	padding: 5px;
 }
 
 th {
-	text-align: left;
+	text-align: center;
 }
 
 .email {
