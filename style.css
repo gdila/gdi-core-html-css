@@ -1,0 +1,43 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: pink;
+	width: 80%;
+	margin: 0 auto;
+}
+
+a {
+	color: red;
+	font-weight: bold;
+	font-style: italicized;
+}
+
+#theTable {
+	color: white;
+	background-color: orange;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.centered {
+	margin: 0 auto;
+	width: 100%;
+}
+
+#theTable td {
+	background-color: #FFF;
+	color: red;
+	text-align: right;
+}
+
+th {
+	text-align: left;
+}
+
+.email {
+	background: red;
+	color: white;
+}
+
+.title {
+	font-size: 2em;
+}
