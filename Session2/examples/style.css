@@ -55,6 +55,10 @@ body {
 	
 }
 
+#header a {
+	background: none;
+}
+
 a,a:visited {
 	background-color: gray;
 	color: white;
