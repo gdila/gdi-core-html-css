@@ -38,30 +38,32 @@
 			<div class="slides">
 			  <!-- Opening slide -->
         <section>
-          <img src = "images/gdi_logo_badge.png">
+          <img src = "images/gdi_logo_badge.png" style="box-shadow: none; border: 0;">
           <h3>Beginning HTML and CSS</h3>
           <h4>Session 2</h4>
         </section>
+
+        <section>
+          <h3>Class notes</h3>
+          <p>All slides are avaliable to download at <a href="http://gdila.github.io/gdi-core-html-css" target="_blank">http://gdila.github.io/gdi-core-html-css</a></p>
+        </section>
         
         <!-- Welcome-->
-       <!--  <section>
-          <h3>Welcome!</h3>
-          <div class = "left-align">
-          <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-          <p class ="green">Some "rules"</p>
-          <ul>
-            <li>We are here for you!</li>
-            <li>Every question is important</li>
-            <li>Help each other</li>
-            <li>Have fun</li>
-          </ul>
-          </div>
-        </section> -->
+       <section>
+          <h2>Upcoming GDI Classes</h2>
+          <ul style="font-weight: bold;" class="teal">
+          <li><a href="http://www.meetup.com/Girl-Develop-It-Los-Angeles/events/219835955/" target="_blank">Intro to Web Concepts</a> <span style=" font-size: .7em; color: deeppink">(only 3 spots left)</span></li>
+          <p>Terminology: web stack, client, server, cloud, web languages, designer vs. developer</p>
+          <li><a href="http://www.meetup.com/Girl-Develop-It-Los-Angeles/events/220922816/" target="_blank">Git and Github 101</a> <span style=" font-size: .7em; color: deeppink">(only 6 spots left)</span></li>
+          <p>Yeah, version control is a thing now.</p>
+          <li><a href="http://gdila.org">Girl Develop It Los Angeles</a> - More classes coming soon!</li>
+            <div class ="clear"></div>
+        </section>
         
          <section>
         	<h3>What we'll be making today</h3>
         	<div class="left" style="width: 45%;">
-        		<p>Today we will be making a site from scratch using divs and spans to create a header, footer, sidebar and a content area.</p>
+        		<p>Today we will be adding structure and styles to last week's class exercises using divs and spans to create a header, footer, sidebar and a content area.</p>
         	</div>
         	<div class="right" style="width: 45%;">
         		<img src="images/session2site.png">
@@ -88,12 +90,12 @@
         </section>
         <!-- Inline v block again-->
         <section>
-          <h3>Block &amp; Inline Elements,</h3>
+          <h3>Block &amp; Inline Elements</h3>
           <ul>
             <li>CSS divides HTML into two types: inline and block.</li>
             <li>After block elements, browsers render a new line.</li>
             <li>Inline elements: img, a, br, em, strong</li>
-            <li>Block elements: p, h1, ul, li, almost everything else</li>
+            <li>Block elements: p, h1, ul, ol, li, almost everything else</li>
           </ul>
         </section>
         <section> 
@@ -121,17 +123,17 @@
           <div class = "left-align">
           <ul>
           <li>The div tag is used everywhere to group elements together into sections.</li>
-          <li>For example, what if we want the first 2 paragraphs of a section to be right-aligned, purple & bold, but we don't want any other paragraphs to be right-aligned?</li>
+          <li>For example, what if we want the first 2 paragraphs of a section to be right-aligned, purple &amp; bold, but we don't want any other paragraphs to be right-aligned?</li>
           <li>We would wrap them in a div element to style them differently.</li>
           </ul>
            </div>
         </section> 
         
         <section>
-          <h3>Grouping elements with div, cont.</h3>
+          <h3>Grouping elements with div</h3>
 <pre><code class = "html">
-.align-right{
-  text-align:right;
+.align-right  {
+  text-align: right;
   color: purple; 
   font-weight: bold;
 }
@@ -145,7 +147,7 @@
 &lt;p>Magna aliqua. Ut enim ad minim veniam.&lt;/p> 
 &lt;p>Quis nostrud exercitation ullamco.&lt;/a>
 </code></pre>
-<div style = "text-align:right;font-weight: bold; font-size: 70%;" class = "green">
+<div style="text-align: right; font-weight: bold; font-size: 70%; color: purple;">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
   <p>Sed do eiusmod tempor incididunt ut labore et dolore.</p>
 </div>
@@ -157,8 +159,9 @@
         </section> 
         <section>
           <h3>Let's Develop It</h3>
-         <p class="left-align">Let's create a site using divs to separate content into different sections on our page.</p>
-         <p class="left-align">Create a header, content area, sidebar, and a footer.</p>         
+         <p class="left-align">Let's use our site from last week to add divs to separate content into different sections on our page.</p>
+         <p class="left-align">Create div for a header, content area, sidebar, and a footer.</p>
+         <p class="left-align">Assign each div a class describing what they are. We will select this class later to style the divs with CSS.</p>         
         </section> 
         <section>
         	<h3>Element: Span</h3>
@@ -173,8 +176,8 @@
           <p>Span is used to apply a specific style inline</p>
           
 <pre><code class ="html">
-.yellow{
-  color:yellow;
+.love {
+  color: yellow;
 }
 </code></pre>
 
@@ -188,6 +191,11 @@
          <section>
           <h3>Let's Develop It</h3>
          <p>Let's add some spans to our content to help highlight some text. </p>
+         <ol>
+           <li>Add some spans and assign them classes or IDs.</li>
+           <li>Create a style for that class in your stylesheet.</li>
+           <li>View the results in your browser.</li>
+         <ol>
         </section>      
         <!-- Pseudo class-->
         <section>
@@ -229,26 +237,26 @@ a:link
         <!-- Exercise-->
         <section>
           <h3>Let's Develop It</h3>
-          <p>Add pseudo classes to your links</p>
+          <p>Add pseudo classes to all of your links in the stylesheet.</p>
         </section>
         
         <!-- Box model-->
         <section>
           <h3>Box Model</h3>
-          <img src ="images/box-model.png"/>
+          <img src ="images/box-model.png" style="box-shadow: none; border: 0!important;"/>
         </section>
         
         <!-- Padding -->
         <section>
           <h3>Padding</h3>
           <p>Space between the border and the content</p>
-          <img src ="images/box-model.png"/>
+          <img src ="images/box-model.png"  style="box-shadow: none; border: 0!important;"/>
         </section>
         <section>
           <h3>Padding</h3>
           <p>Space between the border and the content</p>
           <p>Adds to the total width of the box.</p>
-          <img src ="images/box-model-padding.png"/>
+          <img src ="images/box-model-padding.png"  style="box-shadow: none; border: 0!important;"/>
         </section>
         
         <section>
@@ -288,14 +296,14 @@ padding: 10px 5px 3px 5px;
 <pre><code class ="html">
   padding: 10px 20px 30px 40px;
 </code></pre>
-        <img src ="images/box-model-padding2.png"/>
+        <img src ="images/box-model-padding2.png"  style="box-shadow: none; border: 0!important;"/>
         </section>
        
         <!-- Border-->
         <section>
           <h3>Border</h3>
           <p>The edge around the box, specified as "thickness, style, color."</p>
-          <img src ="images/box-model-border.png">
+          <img src ="images/box-model-border.png"  style="box-shadow: none; border: 0!important;">
         </section>
         
         <section>
@@ -329,7 +337,7 @@ padding: 10px 5px 3px 5px;
         <section>
           <h3>Margin</h3>
           <p>The transparent area around the box that separates it from other elements.</p>
-          <img src ="images/box-model-margin.png"/>
+          <img src ="images/box-model-margin.png"  style="box-shadow: none; border: 0!important;"/>
         </section>
         
         <section>
@@ -381,14 +389,14 @@ padding: 10px 5px 3px 5px;
 		<section>
 			<h3>Property: Height</h3>
 			<p>Sets the height of an element.</p>
-			<p>Does not include padding or borders, remember these add to the width.</p>
+			<p>Does not include padding or borders, remember these add to the height.</p>
 		</section>
 		<!-- Exercise -->
 		<section>
 			<h3>Let's develop it!</h3>
 			<div class="left-align">
 				<p>Add a width &amp; height to our divs.</p>
-				<p>Use IDs to target each div with CSS</p>
+				<p>Use IDs or classes to target each div with CSS</p>
 			</div>
 		</section>
         <section>
@@ -597,7 +605,7 @@ padding: 10px 5px 3px 5px;
        <section>
        <h3>Using floats to place elements side by side</h3> 
        <p>If you want two block level elements to be side by side, you need to float both elements. One left, and one right.</p>
-       <img src="images/example-float-column.png" />
+       <img src="images/example-float-column.png"  style="box-shadow: none; border: 0!important;" />
        </section>
        <!-- Clear-->
        <section>
@@ -644,6 +652,12 @@ padding: 10px 5px 3px 5px;
         <section>
           <h2>Questions?</h2>
           <div style = "font-size:1200%; height:100%; margin-top:30%" class ="blue">?
+            <div class ="clear"></div></div>
+        </section>
+        
+        <section>
+          <h2>Class Survey</h2>
+          <div style = "margin-top: 40px; font-size: 1.5em; font-weight: bold;" class ="teal"><a href="http://goo.gl/Smx6dw" target="_blank">http://goo.gl/Smx6dw</a>
             <div class ="clear"></div></div>
         </section>
       </div>
