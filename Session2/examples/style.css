@@ -1,24 +1,70 @@
-body {
-	font-family: Arial, sans-serif;
-	background-color: pink;
-	width: 80%;
-	margin: 0 auto;
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, caption,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 
-a {
+
+/* CSS below */
+body {
+	line-height: 1;
+}
+ol, ul 
+{
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+	background-color: pink;
+	font-family: Arial, sans-serif;
+	margin: 0 auto;
+	width: 80%;
+	
+}
+
+a,a:visited {
+	background-color: gray;
 	color: white;
 	font-weight: bold;
 	text-decoration: underline;
 }
 
-a:visited {
-	color: blue;
-	background-color: lime;
-}
-
 a:hover {
-	color: purple;
 	background-color: white;
+	color: purple;	
 }
 
 a:active {
@@ -26,14 +72,12 @@ a:active {
 	background-color: black;
 }
 
-
-
 #theTable {
-	color: white;
 	background-color: orange;
-	width: 50%;
+	color: white;
 	margin: 40px 0;
 	text-align: left;
+	width: 50%;
 }
 
 .centered {
@@ -61,9 +105,9 @@ th {
 }
 
 .redbold {
-	font-weight: bold;
 	color: red;
 	font-size: 2em;
+	font-weight: bold;
 }
 
 #header {
