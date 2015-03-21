@@ -6,16 +6,34 @@ body {
 }
 
 a {
-	color: red;
+	color: white;
 	font-weight: bold;
-	font-style: italicized;
+	text-decoration: underline;
 }
+
+a:visited {
+	color: blue;
+	background-color: lime;
+}
+
+a:hover {
+	color: purple;
+	background-color: white;
+}
+
+a:active {
+	color: deeppink;
+	background-color: black;
+}
+
+
 
 #theTable {
 	color: white;
 	background-color: orange;
-	width: 80%;
-	margin: 0 auto;
+	width: 50%;
+	margin: 40px 0;
+	text-align: left;
 }
 
 .centered {
@@ -40,4 +58,26 @@ th {
 
 .title {
 	font-size: 2em;
+}
+
+.redbold {
+	font-weight: bold;
+	color: red;
+	font-size: 2em;
+}
+
+#header {
+	background-color: yellow;
+}
+
+.sidebar {
+	background-color: lime;
+}
+
+#content {
+	background-color: gray;
+}
+
+#footer {
+	background-color: orange;
 }
