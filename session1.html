@@ -69,6 +69,8 @@
           <h3>Class notes</h3>
           <p>All slides are avaliable to download at <a href="http://gdila.github.io/gdi-core-html-css
 ">http://gdila.github.io/gdi-core-html-css</a></p>
+          <small>Please write this down for reference and late comers</small>
+
         </section>
         <!-- Welcome-->
         <section class="hide-pdf">
@@ -224,26 +226,7 @@
              </li>
           </ul>
         </section>
-       <!-- Commenting out sublime text intro so teachers can choose whether or not to use sublime text in class-->
-         <!-- intro to sublime text 2 -->
-
-        <!-- <section>
-          <h3>Get Started: Sublime Text 2</h3>
-          <p class="left"><strong>We'll be using Sublime Text 2 in class today.</strong></p>
-          <ol>
-            <li>
-              <p>Download ST2 from www.sublimetext.com/2</p>
-            </li>
-            <li>
-              <p>Turn off Auto Correct &amp; Tab Completion<br/></p>
-              <p>Modify your the preferences / settings by adding these lines to the code:</p>              
-              <ul >
-                <li style="margin: 0 0 0 40px;">"tab_completion": false,</li>
-                <li style="margin: 0 0 0 40px;">"auto_complete": false</li>
-              </ul>
-            </li>
-          </ol>
-        </section>  -->
+        
         <!-- Folder Structure -->
          <section>
           <h3>Get Started: Folder Structure</h3>
@@ -264,6 +247,25 @@
             <img src="images/folderstructure1.png" />
           </div>
         </section>
+<!-- Develop it!-->
+        <section class="hide-pdf">
+          <h3>Let's Develop it!</h3>
+          <p class="green">Let's get our development environment set up</p>
+        <ol class="left" style="width:50%;">
+          <li>Open Sublime Text 2</li>
+          <li>Create a folder on your desktop with an images folder and empty text files named index.html and style.css</li>
+          <li>Drag folder from desktop onto Sublime Window</li>
+          <li>Open index.html in your browser</li>
+        </ol>
+
+        <div class="right" style="width: 45%;">
+            <img src="images/folderstructure1.png" />
+          </div>
+         </section>
+
+
+
+
         <!-- Example of site we'll be making-->
         <section>
         	<h3>What we'll be building today</h3>
@@ -271,7 +273,7 @@
         		<p>Today we will be learning how to code a site from scratch using paragraphs, headings, links, images, and lists.</p>
         	</div>
         	<div class="right" style="width: 45%;">
-        		<img src="images/session1site.png"/>
+        		<img src="images/first-page.png"/>
         	</div>
         </section>
 
@@ -317,8 +319,8 @@
             <strong class="blue">Tag</strong>
             <ul>
               <li>Marks the beginning &amp; end of an element</li>
-               <li>Opening tag and Closing Tag
-               <li>Tags contain characters that indicate the tags purpose</li>
+               <li>Opening Tag and Closing Tag
+               <li>Tags contain characters that indicate the tag's purpose</li>
 <pre><code class ="html">
 &lt;tagname>Stuff in the middle&lt;/tagname></code></pre>
               </li>
@@ -447,7 +449,7 @@
           <h3>Nesting</h3>
           <p>All elements "nest" inside one another</p>
           <p><small>Nesting is what happens when you put other containing tags inside other containing tags. For example, you would put the &lt;p> inside of the &lt;body> tags. The &lt;p> is now nested inside the &lt;body></small></p>
-          <img src = "images/owls.jpg"/>
+          <img src = "images/owls.jpg" style="width: 25%; border: 0; box-shadow: none;"/>
           
           <p>Whichever element OPENS first CLOSES last</p>
         </section>
@@ -533,7 +535,8 @@
             <h6 style = "font-size: 75%">Heading 6</h6>
           </div>
           <div class ="clear"></div>
-          <p>* Heading number indicates hierarchy, not size. Think: Outlines from high school papers</p>
+          <p>* Heading number indicates hierarchy, not size. Think: Outlines from high school papers
+          <br/><small>(<a href="http://en.wikipedia.org/wiki/Semantic_HTML">semantic</a> markup, rather than presentational)</small></p>
           </div>
         </section>
         
@@ -553,15 +556,14 @@
 &lt;/p>
 </code></pre>
           </div>
-          <div class = "left left-align" style = "width:50%">
-            <p>
+          <div class = "left left-align" style = "width:50%"><p>
               Here is a paragraph with <em>Emphasized</em> text and <strong>Important</strong> text.
             </p>
           </div>
           <div class ="clear"></div>
           <br/>
           <br/>
-          <p>* Notice: em and strong are meant to indicate meaning through style. If you want to have italicized for appearance and not to communicate meaning, you should use CSS.</p>
+          <p>* Notice: em and strong are meant to indicate meaning rather than style. (<a href="http://en.wikipedia.org/wiki/Semantic_HTML">Semantic</a>) If you want to have italicized for appearance and not to communicate meaning, you should use CSS.</p>
           </div>
         </section> 
 <!--develop it!-->
@@ -606,7 +608,7 @@
         </section>
         <!-- relative & absolute links -->
         <section>
-        	<h3>Relative vs. Absolute paths for links & images</h3>
+        	<h3>Relative vs. Absolute paths for links &amp; images</h3>
         	<ul>
         		<li>
         		<strong class="blue">Relative</strong>
@@ -648,7 +650,7 @@
 <pre><code>
 &lt;img src ="http://wilt.xyz/pink-logo.png" alt = "Girl Develop It Logo"/>
 </code></pre>
-<img src ="images/pink-logo.png" alt = "Girl Develop It Logo"/>
+<img src="images/pink-logo.png" alt="Girl Develop It Logo" style="border: 0; box-shadow: none;"/>
           <p><small>* Notice: This tag is our first example of a stand-alone or "self-closing" element.</small></p>
 
         </section>
@@ -656,7 +658,7 @@
         <section>
           <h3>Element: Line Break</h3>
           <div>
-          <div class = "left" style = "width:50%">
+          <div class = "left" style = "width:45%">
 <pre><code>
 &lt;p>
   Imagine there's no Heaven &lt;br/>
@@ -664,9 +666,10 @@
   No hell below us  &lt;br/>
   Above us only sky
 &lt;/p>
+
 </code></pre>
           </div>
-          <div class = "left left-align" style = "width:50%">
+          <div class = "left left-align" style = "width:55%">
             <p>
             Imagine there's no Heaven <br/>
             It's easy if you try <br/>
@@ -683,8 +686,15 @@
         <!-- Develop it! -->
         <section>
         	<h3>Let's Develop It!</h3>
-        	<p>Let's add some images and line breaks to our page.</p>
-        	<p>We can even turn our images into links!</p>
+        	<p class="green">Let's add some images and line breaks to our page.</p>
+        	<p class="green">We can even turn our images into links!</p>
+          <ol>
+          <li>Add some line breaks</li>
+          <li>Add an image from your computer using a relative path</li>
+          <li>Add an image from the internet using the absolute path</li>
+          <li>Add hyperlinks around the image</li>
+          </ol>
+
         </section>
         <!-- Lists-->
         <section>
@@ -733,9 +743,18 @@
         <!-- Develop it!-->
         <section class="hide-pdf">
         	<h3>Let's Develop it!</h3>
-        	<p>Let's add one of each ordered and unordered lists to our page.</p>
-        	<p>We can make a list of links or even a list of images!</p>
-        </section>
+        	<p class="green">Let's add some ordered and unordered lists to our page.</p>
+        	<p class="green">We can make a list of links or even a list of images!</p>
+        <ol>
+          <li>Make an unordered list of your top 5 favorite foods using the UL tag</li>
+          <li>Make an ordered list of your top 5 favorite songs using OL tag</li>
+          <li>Add hyperlinks to each list item, remember to close each tag in the same order you opened them</li>
+        </ol>
+         </section>
+
+
+
+
         <!--Comments-->
         <section>
         	<h3>Comments</h3>
@@ -756,7 +775,17 @@
   &lt;/ol> 
 --> 
         	</code></pre>
-        </section>        
+        </section>  
+
+        <!-- Develop it!-->
+        <section class="hide-pdf">
+          <h3>Let's Develop it!</h3>
+          <p class="green">Let's add some comments to our page.</p>
+        <ol>
+          <li>Add a comment before your unordered list describing what the content is.</li>
+          <li>Comment out fist the ordered list on your page</li>
+        </ol>
+         </section>      
         
         <section>
           <h3>Tables</h3>
@@ -801,6 +830,46 @@
         	<img src="images/example-tables.png" alt="Example of tables" />
         </section>
 
+        <!-- Develop it!-->
+        <section class="hide-pdf">
+          <h3>Let's Develop it!</h3>
+          <p class="green">Let's add a simple table to our page</p>
+        <ol>
+          <li>Create a table with 2 columns and 3 rows</li>
+          <li>Each row should have a table row or &lt;tr&gt;</li>
+          <li>The first row will be the table heading &lt;th&gt;</li>
+          <li>The other rows will be table data or &lt;td&gt;</li>
+        </ol>
+        <br/><br/>
+            <table style="border: 1px solid; width: 100%" align="center">
+              <tr> 
+                <th style="border: 1px solid; background: #000; color: #FFF">Fruit</th>
+                <th style="border: 1px solid; background: #000; color: #FFF"">Color</th>
+              </tr>
+              <tr> 
+                <td style="border: 1px solid">Banana</td>
+                <td style="border: 1px solid">Yellow</td>
+              </tr>
+              <tr> 
+                <td style="border: 1px solid">Orange</td>
+                <td style="border: 1px solid">Orange</td>
+              </tr>
+              <tr> 
+                <td style="border: 1px solid">Apple</td>
+                <td style="border: 1px solid">Red</td>
+              </tr>
+              <tr> 
+                <td style="border: 1px solid">Grapes</td>
+                <td style="border: 1px solid">Green</td>
+              </tr>
+              <tr> 
+                <td style="border: 1px solid">Cherry</td>
+                <td style="border: 1px solid">Red</td>
+              </tr>
+            </table>
+
+         </section>
+
         
         <!-- Character codes-->
         <section>
@@ -818,15 +887,23 @@
           <div class="right" style="width: 50%;">
           	<img src="images/example-characters.png" alt="Example of Characters"/>
           </div>
-          
-        </section>        
+        </section> 
+
+      <!-- Develop it!-->
+        <section class="hide-pdf">
+          <h3>Let's Develop it!</h3>
+          <p class="green">Let's add some special characters to our page.</p>
+          <ol>
+          <li>Add a copyright statement with a hyperlink to your email address</li><br/>
+          <p><small>Copyright &copy;2015 by <a href="mailto:hello@suzettefranck.com">Suzette Franck</a>.</small></p><br/>
+          <li>Add your 2 favorite html tags so it shows in the browser. Make sure to use &amp; correctly</li><br/>
+          <small>My favorite HTML tags are &lt;table&gt; &amp; &lt;/br&gt;.</small>  
+         </section>
+
         <section>
-          <h3>30 Minute Break</h3>
-          <h4> Chinatown: Local Shops</h4>
-          <div><span class = "green">Chinese Food: </span><a href="http://www.goldencityla.com/">Golden City</a></div>
-          <div><span class = "green">Chinese Pastries: </span><a href="http://phoenixbakeryinc.com/">Phoenix Bakery</a></div>
-          <div><span class = "green">Chinese Snacks &amp; Boba: </span><a href="http://www.lollicup.com/">Lollicup</a></div>
+          <h3>Break Time</h3>
         </section>
+
         <section>
           <h3>Anatomy of a website</h3>
           <div class = "blue"> Presentation</div>
