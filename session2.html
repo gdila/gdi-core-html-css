@@ -54,8 +54,8 @@
         	<div class="left" style="width: 45%;">
         		<p>Today we will be adding structure and styles to last week's class exercises using <b class="teal">divs</b> and <b class="teal">spans</b> to create a header, footer, sidebar and a content area.</p>
         	</div>
-        	<div class="right" style="width: 45%;">
-        		<img src="images/session2site.png">
+        	<div class="right" style="width: 55%;">
+        		<img src="images/cupcake-website.png">
         	</div>
         </section>
         
@@ -412,25 +412,28 @@ padding: 10px 0;
 			<h3>Property: Width</h3>
 			<p>Sets the width of an element.</p>
 			<p>Does not include padding or borders, remember these add to the width.</p>
+      <p>Can be specified in %, px, em, or other unit of measure</p>
 		</section>
 		<!-- height-->
 		<section>
 			<h3>Property: Height</h3>
 			<p>Sets the height of an element.</p>
 			<p>Does not include padding or borders, remember these add to the height.</p>
+      <p>Can be specified in %, px, em, or other unit of measure</p>
 		</section>
 		<!-- Exercise -->
 		<section>
 			<h3>Let's develop it!</h3>
-			<div class="left-align">
-				<p>Add a width &amp; height to our divs.</p>
-				<p>Use IDs or classes to target each div with CSS</p>
-			</div>
+			<p class="green">Add a width &amp; height to our divs. Use IDs or classes to target each div with CSS</p>
+      <ol>
+      <li>Make the sidebar div width 20% and height 100%</li>
+      </ol>
 		</section>
+
         <section>
          <h3>Static Positioning</h3>
          <div class = "left-align">
-         <p>HTML elements are positioned static by default.</p>
+         <p class="red">HTML elements are positioned static by default.</p>
          <p>Static elements are positioned in the normal ﬂow of the page</p>
          <p>Static elements ignore top, bottom, right or left property specifications.</p>
          </div>
@@ -588,12 +591,19 @@ padding: 10px 0;
         <div style="position: absolute; bottom: -15px; left:60px; 
           background-color: green; z-index: 2; "> Top </div>
        </section>
-      <!--  <section>
-        <h3>Let's Develop it!</h3>
-        <p>Let's add some positioning.</p>
-        <p>Let's create a div that contains an image and a caption, and position the caption absolutely overtop the image.</p>
-        
-       </section> -->
+     
+     <!-- Exercise -->
+      <section>
+        <h3>Let's develop it!</h3>
+        <p class="green">Let's position our site title over the header image and center everything</p>
+        <ol>
+        <li>Add a background color, width:100%, text-align: center; and position: relative to your heading h1</li>
+        <li>Center the image adding text-align: center to the containing element</li>
+        <li>Position your heading absolutely within the image using the top property</li>
+        <li>Add a border to the image in the header, use border-radius to add rounded corners
+        </ol>
+      </section>
+
        <!-- Float-->
        <section>
          <h3>Float</h3>
@@ -675,7 +685,13 @@ padding: 10px 0;
         <!-- Exercise-->
        <section>
          <h3>Let's Develop It</h3>
-         <p>Let's float our side bar and content areas.</p>
+         <p class="green">Let's float our side bar and content areas. Clear all floats in the footer.</p>
+         <ol>
+         <li>Float the sidebar div to the left</li>
+         <li>Float the content area to the right</li>
+         <li>Clear any floats in the footer div so that the flow lines up properly.</li>
+         </ol>
+
        </section>       
 
        <!-- Question-->
@@ -684,6 +700,18 @@ padding: 10px 0;
           <div style = "font-size:1200%; height:100%; margin-top:30%" class ="blue">?
             <div class ="clear"></div></div>
         </section>
+
+        <!-- Homework-->
+       <section>
+         <h3>Homework</h3>
+         <p>Use the positioning skills that you learned today to make a nicer navigation by floating each li element to the left. Turn off the bullets by
+        using list-style-type: none; on the ul.</p>
+
+        <p>Once complete, copy this navigation to the about and contact pages. Complete your website's other pages and upload it as your first resume piece!</p>
+
+        <p>I'd love to see what you came up with, so if you'd like to share it, send the zipped html site and files to me at <a href="mailto:hello@suzettefranck.com">hello@suzettefranck.com</a></p>
+
+       </section>      
 
         <section>
           <h2>Upcoming GDI Classes</h2>
