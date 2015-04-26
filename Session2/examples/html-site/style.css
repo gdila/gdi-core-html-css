@@ -1,0 +1,82 @@
+body {
+	background: deeppink;
+}
+
+p, li {
+	color: white;
+	font-family: sans-serif;
+}
+
+p {
+	margin-bottom: 2em;
+}
+
+ol{
+	margin: 0 auto;
+	width: 200px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: pink;
+}
+
+hr {
+	clear: both;
+}
+
+a {
+	color: #c2ff91;
+	text-decoration: none;
+}
+
+a:link	{ /* unvisited link */
+	background-color: black;
+	} 
+a:visited	{  /* visited link */
+	background-color: gray;
+	} 
+a:hover	{  /* mouse over link */
+	background-color: red;
+	} 
+a:active	{  /* selected link */
+	background-color: lime;
+	} 
+
+.featured {
+	color: purple;
+	font-weight: bold;
+}
+
+#highlight {
+	background-color: white;
+	color: deeppink;
+	font-weight: bold;
+}
+
+#main {
+	background-color: yellow;
+	color: deeppink;
+	font-weight: bold;
+}
+
+.sidebar {
+	background-color: pink;
+	border-right: 5px solid yellow;
+	padding: 40px;
+}
+
+.footer {
+	background-color: black;
+	border-top: 5px solid white;
+	color: white;
+	padding: 40px 20px 10px 20px;
+}
+
+.content {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.content img {
+	margin: 0 40px 20px 40px;
+}
