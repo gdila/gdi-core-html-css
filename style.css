@@ -3,9 +3,13 @@ body {
 	background-color: pink;
 	width: 80%;
 	margin: 50px auto;
+	font-size: 20px;
 }
 
-a {
+a { color: #555;
+	font-weight: bold;}
+
+table a {
 	color: red;
 	font-weight: bold;
 	font-style: italicized;
