@@ -12,7 +12,7 @@ a { color: #555;
 table a {
 	color: red;
 	font-weight: bold;
-	font-style: italicized;
+	font-style: italic;
 }
 
 .centered {
