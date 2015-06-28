@@ -9,7 +9,7 @@
 body {
 	background: deeppink url('images/background.png') repeat;
 	color: white;
-	font-family: arial, sans-serf;
+	font-family: 'Cherry Swash',arial, sans-serf;
 	font-size: 16px;
 	height: 100%;
 	width: 100%;	
@@ -17,9 +17,10 @@ body {
 
 blockquote {
 	background: rgba(255,255,255,.75);
-	color: deeppink;
+	color: #336699;
 	display: block;
-	font-family: arial,sans-serif;
+	font-family: Righteous, arial, sans-serif;
+	font-size: 1.2em;
 	float: left;
 	margin: 0 20px 1em 0;
 	padding: 20px;
