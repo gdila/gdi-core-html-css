@@ -1,0 +1,237 @@
+/* Global Components */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+	background: deeppink url('images/background.png') repeat;
+	color: white;
+	font-family: 'Cherry Swash',arial, sans-serf;
+	font-size: 16px;
+	height: 100%;
+	width: 100%;	
+}
+
+blockquote {
+	background: rgba(255,255,255,.75);
+	color: #336699;
+	display: block;
+	font-family: Righteous, arial, sans-serif;
+	font-size: 1.2em;
+	float: left;
+	margin: 0 20px 1em 0;
+	padding: 20px;
+	text-align: justify;
+	width: 50%;
+}
+
+a {
+	color: purple;
+	font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: deeppink;
+	font-family: 'Righteous', 'serif';
+	font-weight: bold;
+	margin-bottom: 1em;
+	text-transform: capitalize;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+h5 {
+	font-size: .8em;
+}
+
+h6 {
+	font-size: .6em;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+i, em {
+	font-style: italic;
+}
+
+p {	margin-bottom: 1em;}
+
+.wrapper {
+	background: deeppink;
+	clear: both;
+	display: block;
+	margin: 13px auto;
+	padding-top: 20px;
+	width: 90%;
+}
+
+/* Header Styling */
+
+.header {
+	background: url('images/royal-cupcakes.jpg') no-repeat center center;
+	background-size: cover;
+	border-radius: 20px 20px 0 0;
+	height: 200px;
+	margin: 20px 5% 0;
+	text-align: center;
+	width: 90%;
+}
+
+.header h1 {
+	background: rgba(100,0,100,.75);
+	color: yellow;
+	padding: 10px 0;
+	position: relative;
+	text-align: center;
+	top: 40%;
+}
+
+/* Navigation */
+
+ul.navigation {
+	background: white;
+	box-sizing: border-box;
+	list-style-type: none;
+	margin: 105px auto 0 0;
+	padding: 5px 0 5px 85px;
+	position: absolute;
+	width: 90%;
+}
+
+.navigation li {
+	padding: 0;
+}
+
+.navigation a {
+	background: hotpink;
+	border-radius: 5px;
+	color: #fff;
+	display: block;
+	float: left;
+	font-size: .8em;
+	font-weight: bold;
+	margin: 0 1%;
+	min-width: 200px;
+	padding: 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+	width: 15%;
+}
+
+.navigation a:visited {
+	background: hotpink;
+	color: aqua;
+}
+
+.navigation a:hover {
+	background: lightpink;
+	color: deeppink;
+}
+
+.navigation a:active {
+	background: violet;
+	color: yellow;
+}
+
+/* Sidebar Styling */
+
+.sidebar {
+	background: rgba(100,0,100,.75);
+	box-sizing: border-box;
+	border-right: 5px solid white;
+	float: left;
+	padding: 20px 0 0 0;
+	text-align: center;
+	width: 20%;
+}
+
+.sidebar h2 {
+	color: lightpink;
+	margin: 0 auto;
+	width: 75%;
+}
+
+.sidebar ol {
+	margin: 20px 50px;
+	font-family: arial, sans-serif;
+}
+
+.sidebar li {
+	font-family: 'Cherry Swash',serif;
+	margin-bottom: 1em;
+}
+
+/* Content Styling */
+
+.content {
+	background: lightpink;
+	box-sizing: border-box;
+	color: indigo;
+	font-family: 'Cherry Swash',serif;
+	float: left;
+	opacity: .75;
+	padding: 20px 5% 18px;
+	position: relative;
+	right: 0;
+	width: 80%;
+}
+
+.content img {
+	margin: 20px;
+	border: 10px solid deeppink;
+	border-radius: 100%;
+}
+
+#theone {
+	background: black;
+	color: red;
+}
+
+.super {
+	color: yellow;
+	background-color: black
+}
+
+.yummy {
+	background: white;
+	color: deeppink;
+	font-family: serif;
+	font-weight: bold;
+}
+
+/* Footer Styling */
+
+.footer {
+	background: purple;
+	border-top: 10px dotted lightpink;
+	clear: both;
+	padding: 40px 20px;
+	text-align: center;
+}
+
+.footer a {
+	color: lightpink;
+	font-weight: bold;
+}
+
+
+
