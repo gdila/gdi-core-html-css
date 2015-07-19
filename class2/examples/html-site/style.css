@@ -1,0 +1,114 @@
+body {
+	background-color: lightpink;
+	background-image: url('images/paisley.png');
+	color: purple;
+	font-family: arial, sans-serif;
+	width: 75%;
+}
+
+p {
+  	color: deeppink;
+}
+
+table {
+	width: 50%;
+}
+
+th {
+	border: 1px solid blue;
+	font-weight: bold;
+}
+
+td {
+	border: 1px solid lime;
+}
+
+ol { 
+	background-color: pink;
+	color: purple;
+	font-weight: bold;
+	list-style-type: upper-alpha;
+	margin: 2px;
+	padding: 2px;
+	width: 50%;
+}
+
+ul { 
+	background-color: lightBlue;
+	list-style-type: square;
+	font-weight: bold;
+	color: deeppink;
+	margin: 2px;
+	padding: 2px;
+	width: 50%;
+}
+
+li {
+	margin: 2px;
+	padding: 2px;
+}
+
+h1 {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+h5 {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+h6 {
+	font-size: .8em;
+	font-weight: bold;
+}
+
+em, i {
+	font-style: italic;
+}
+
+strong, b {
+	font-weight: bold;
+}
+
+
+
+
+/* This is the one id */
+#TheOne {
+	background-color: yellow;
+	border: 5px solid red;
+	font-size: 2em;
+	font-style: italic;
+	font-weight bold;
+	height: 3em;
+	text-align: center;
+	width: 25%;
+}
+
+.fun {
+	font-family: "comic sans ms";
+	font-size: 1.5em;
+}
+
+.nice { font-size: 3em;
+		text-transform: uppercase;}
+
+.kitten {
+	width: 30%%;
+}
