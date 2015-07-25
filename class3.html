@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Class 3 ~ HTML/CSS ~ Girl Develop IT</title>
+		<title>Class 3 ~ HTML/CSS 101 ~ Girl Develop IT</title>
 
 		<meta name="description" content="This is the official Girl Develop It Core HTML/CSS curriculum. It was developed through the contributions of Pamela Fox, Alexis Goldstein, Erin M. Kidwell, Izzy Johnston, and Jen Myers.
 
@@ -15,7 +15,7 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 		<link rel="stylesheet" href="reveal/css/reveal.css">
-		<link rel="stylesheet" href="reveal/css/theme/gdidefault.css" id="theme">
+		<link rel="stylesheet" href="reveal/css/theme/gdilight.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
@@ -35,33 +35,37 @@
 		<div class="reveal">
 
 			<!-- Any section element inside of this container is displayed as a slide-->
+
+
 			<div class="slides">
 			  <!-- Opening slide -->
-        <section>
-          <img src = "images/gdi_logo_badge.png">
-          <h3>Beginning HTML and CSS</h3>
-          <h4>Class 3</h4>
-        </section>
-        
+
         <!-- Welcome-->
-        <section>
-          <h3>Welcome!</h3>
+        <section class="hide-pdf">
+          <h3>Welcome to HTML and CSS Class 3!</h3>
           <div class = "left-align">
-          <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-          <p class ="green">Some "rules"</p>
-          <ul>
-            <li>We are here for you!</li>
-            <li>Every question is important</li>
-            <li>Help each other</li>
-            <li>Have fun</li>
-          </ul>
+          <p class="green">Slides at: <a href="http://gdila.github.io/gdi-core-html-css/">http://gdila.github.io/gdi-core-html-css/</a></p>
+          <p>Please open your work from last week:</p>
+          <ol>
+            <li>Open Sublime</li>
+            <li>Drop last week's folder on Sublime to open it as a project</li>
+            <li>Open index.html &amp; style.css in Sublime</li>
+            <li>Open index.html in Chrome</li>
+            <li>Open the Chrome Inspector</li>
+          </ol>
           </div>
+        </section>
+
+        <section>
+          <img style="border: 0; box-shadow: none;" src = "images/gdi_logo_badge.png">
+          <h3>HTML and CSS 101</h3>
+          <h4>Class 3</h4>
         </section>
         
          <section>
         	<h3>What we'll be making today</h3>
         	<div class="left" style="width: 45%;">
-        		<p>Today we will be making a site from scratch using divs and spans to create a header, footer, sidebar and a content area.</p>
+        		<p>Today we will be adding divs and spans to create a header, footer, sidebar and a content area.</p>
         	</div>
         	<div class="right" style="width: 45%;">
         		<img src="images/session2site.png">
@@ -73,12 +77,12 @@
           <h3>Inline vs Block</h3>
           <div class = "left" style="width: 50%; text-align: left;">
             <div class = "fragment">
-              <p>So far, we have mostly seen <span class="green">"block"</span> elements</p>
-              <p>They appear on the next line, like paragraphs</p>
+              <p>So far, we have mostly seen <span class="green">"block"</span> elements.</p>
+              <p>They appear on the next line, like paragraphs.</p>
             </div> 
             <br/><br/>
             <div class = "fragment">
-              <p>There are also <span class="green">"inline"</span> elements</p>
+              <p>There are also <span class="green">"inline"</span> elements.</p>
               <p>They appear on the same line that they are written on.</p>
             </div>
           </div>
@@ -93,7 +97,7 @@
             <li>CSS divides HTML into two types: inline and block.</li>
             <li>After block elements, browsers render a new line.</li>
             <li>Inline elements: img, a, br, em, strong</li>
-            <li>Block elements: p, h1, ul, li, almost everything else</li>
+            <li>Block elements: p, h1, ul, ol, li, hr, almost everything else</li>
           </ul>
         </section>
         <section> 
@@ -102,7 +106,7 @@
 	        		<li>Block level element. Each new div is rendered on a new line.</li>
 	        		<li>A division, or section of content within an HTML page.</li>
 	        		<li>Used to group elements to format them with CSS.</li>
-	        		<li>Apply IDs and Classes to divs to control their styles with CSS.</li>
+	        		<li>Apply IDs and classes to divs to control their styles with CSS.</li>
         		</ul>
 <pre><code>&lt;div>
    &lt;p>Content&lt;p>
@@ -121,7 +125,7 @@
           <div class = "left-align">
           <ul>
           <li>The div tag is used everywhere to group elements together into sections.</li>
-          <li>For example, what if we want the first 2 paragraphs of a section to be right-aligned, purple & bold, but we don't want any other paragraphs to be right-aligned?</li>
+          <li>For example, what if we want the first 2 paragraphs of a section to be right-aligned, purple &amp; bold, but we don't want any other paragraphs to be right-aligned?</li>
           <li>We would wrap them in a div element to style them differently.</li>
           </ul>
            </div>
@@ -157,8 +161,13 @@
         </section> 
         <section>
           <h3>Let's Develop It</h3>
-         <p class="left-align">Let's create a site using divs to separate content into different sections on our page.</p>
-         <p class="left-align">Create a header, content area, sidebar, and a footer.</p>         
+         <ol>
+         <li class="left-align">Let's add divs to separate our page content into different sections on our page.</li>
+         <li class="left-align">Create a header, content area, sidebar, and a footer.</li>
+         <li class="left-align">Add some CSS to change the background color of each section to something different.</li>
+         <li class="left-align">View the results in your browser.</li>
+         <li class="left-align">Find the HTML, then the CSS that you added in the Chrome Inspector.
+         </ol>       
         </section> 
         <section>
         	<h3>Element: Span</h3>
@@ -187,7 +196,12 @@
         <!-- Exercise-->
          <section>
           <h3>Let's Develop It</h3>
-         <p>Let's add some spans to our content to help highlight some text. </p>
+         <ol><li>Let's add 2 spans with different classes to our content (index.html) to help highlight some text.</li>
+         <li>Create three styles in your style.css to change the styles of the selected text.</li>
+         <li>View the results in your browser.</li>
+         <li>Find the HTML and CSS you added in the Chrome Inspector.</li>
+         </ol>
+
         </section>      
         <!-- Pseudo class-->
         <section>
@@ -217,10 +231,10 @@ a:link
         <section>
           <h3>Pseudo-classes, more CSS for links</h3>
 <pre><code class ="html">
-  a:link	{color:#FF0000;} /* unvisited link */
-  a:visited	{color:#00FF00;} /* visited link */
-  a:hover	{color:#FF00FF;} /* mouse over link */
-  a:active	{color:#0000FF;} /* selected link */
+  a:link	  {color: red;}     /* unvisited link */
+  a:visited	{color: lime;}    /* visited link */
+  a:hover	  {color: aqua;}    /* mouse over link */
+  a:active	{color: yellow;} /* selected link */
 </code></pre>
           <p>Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective!</p>
           <p>Note: a:active MUST come after a:hover in the CSS definition in order to be effective!</p>
@@ -230,6 +244,24 @@ a:link
         <section>
           <h3>Let's Develop It</h3>
           <p>Add pseudo classes to your links</p>
+
+          <pre><code class ="html">
+  /* unvisited link */
+  a:link    {background-color: red;
+             color: yellow;
+             font-weight: bold;
+             font-style: italic;} 
+
+  /* visited link */
+  a:visited {background-color: lime;}
+
+  /* mouse over link */
+  a:hover   {background-color: aqua;} 
+
+  /* selected link */
+  a:active  {background-color: yellow;} 
+  
+</code></pre>
         </section>
         
         <!-- Box model-->
@@ -302,29 +334,50 @@ padding: 10px 5px 3px 5px;
           <h3>Border</h3>
           <p>A solid red border</p>
 <pre><code class = "html">
-  border: 1px solid #ff0000;
+  border: 1px solid red;
 </code></pre>
           <p>A thick dotted black top border</p>
 <pre><code class ="html">
-  border-top: 4px dotted #000000;
+  border-top: 4px dotted black;
 </code></pre>
           <p>Two diﬀerent border styles</p>
 <pre><code class ="html">
-  border-top: 1px solid #ff0000;
-  border-bottom: 4px dotted #000000;
+  border-top: 3px solid red;
+  border-bottom: 10px dashed black;
 </code></pre>
+
+<div style="border-top: 3px solid red; border-bottom: 10px dashed black; margin: 40px; padding: 20px; background-color: silver">This div has a thin solid red border on top and a thick black dashed border on bottom</div>
+
         </section>
        
         <section>
           <h3>Border - Other Properties</h3>
 <pre><code class ="html">
   border-width: 10px;
-  border-style: dashed;
-  border-color: #666666;
+  border-style: dotted;
+  border-color: purple;
 </code></pre>
           <p>You can specify each property separately, or all three together.</p>
-        </section>
-       
+        
+
+<pre><code class ="html">
+  border: 10px dotted purple;
+</code></pre> 
+
+<div style="border: 10px dotted purple; margin: 40px; padding: 20px; background-color: silver">This div has a 10px dotted purple border and a 20px padding</div>
+
+</section>
+
+<!-- Exercise -->
+    <section>
+      <h3>Let's Develop it!</h3>
+      <ol><li>When adding code to a page, start from the top left and work your way across then down, like a typewriter.</li>
+      <li>Add some padding to your divs.</li>
+      <li>Add any border to your sidebar div.</li>
+      <li>Add a top border to your footer div.</li>
+      </ol>
+    </section>
+
         <!-- Margin -->
         <section>
           <h3>Margin</h3>
@@ -346,6 +399,8 @@ padding: 10px 5px 3px 5px;
 <pre><code class = "html">
   margin-top: 10px;
 </code></pre>
+
+<div style="margin: 10px 40px; padding: 20px; background-color: silver">This div has a top margin of 10px</div>
         </section>
         
         <section>
@@ -356,39 +411,50 @@ padding: 10px 5px 3px 5px;
   margin: auto;
   width: 300px;
 </code></pre>
+
+<div style="margin: auto; width: 400px; padding: 20px; background-color: silver">This div is centered</div>
+
           <p>FLUSH-RIGHT</p>
 <pre><code class = "html">
   margin-left: auto;
   margin-right: 5px;
-  width: 300px;
+  width: 400px;
 </code></pre>
+<div style="margin-left: auto;
+  margin-right: 5px; width: 400px; padding: 20px; background-color: silver">This div is flush right</div>
         </section>
         
-        <!-- Exercise-->
-        <!-- Exercise -->
+    <!-- Exercise -->
 		<section>
 			<h3>Let's Develop it!</h3>
-			<p>Let's add some padding, borders, and margins to our divs.</p>
-			<p>Let's center our entire document in the browser.</p>
+			<ol>
+      <li>When adding padding and margins (&amp; border-radius), start from the top left and work clockwise to the right.</li>
+      <li>Add some margins to our divs.</li>
+      <li>Add some margins to our paragraphs and headers.</li>
+      </ol>
 		</section>
         <!-- Width-->
 		<section>
 			<h3>Property: Width</h3>
 			<p>Sets the width of an element.</p>
 			<p>Does not include padding or borders, remember these add to the width.</p>
+      <p class="green">real width = width + padding + borders</p>
+      <p class="blue">margins not included!</p>
 		</section>
 		<!-- height-->
 		<section>
 			<h3>Property: Height</h3>
 			<p>Sets the height of an element.</p>
 			<p>Does not include padding or borders, remember these add to the width.</p>
+      <p class="green">real height = height + padding + borders</p>
+      <p class="blue">margins not included!</p>
 		</section>
 		<!-- Exercise -->
 		<section>
 			<h3>Let's develop it!</h3>
 			<div class="left-align">
-				<p>Add a width &amp; height to our divs.</p>
-				<p>Use IDs to target each div with CSS</p>
+				<li>Set your sidebar width to 30%</li>
+        <li>Set your content width to 70%</li>
 			</div>
 		</section>
         <section>
