@@ -13,7 +13,7 @@
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
+    <link href='http://fonts.googleapis.com/css?family=Righteous|Cherry+Swash' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="reveal/css/reveal.css">
 		<link rel="stylesheet" href="reveal/css/theme/gdilight.css" id="theme">
 
@@ -36,13 +36,7 @@
 
 			<!-- Any section element inside of this container is displayed as a slide-->
 			<div class="slides">
-			  <!-- Opening slide -->
-        <section>
-          <img src = "images/gdi_logo_badge.png" style="border: 0; box-shadow: none;">
-          <h3>HTML and CSS 101</h3>
-          <h4>Class 4</h4>
-        </section>
-        
+
         <!-- Welcome-->
         <section class="hide-pdf">
           <h3>Welcome to HTML and CSS Class 4!</h3>
@@ -59,27 +53,66 @@
           </div>
         </section>
 
+			  <!-- Opening slide -->
+        <section>
+          <img src = "images/gdi_logo_badge.png" style="border: 0; box-shadow: none;">
+          <h3>HTML and CSS 101</h3>
+          <h4>Class 4</h4>
+        </section>
+        
+       <section>
+          <h3>Web Safe Fonts</h3>
+          <ol>
+            <li>13 Web Safe fonts</li>
+            <li>Example font stacks: <a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">http://www.w3schools.com/cssref/css_websafe_fonts.asp</a></li>
+            <li>Always end fontstack with serif, sans-serif, or monospace</li>
+          </ol>
+          <pre><code>
+          p   {  
+                font-family: Tahoma, Geneva, sans-serif; 
+          }
+</code></pre>
+        </section>
+
       <section>
           <h3>Google Web Fonts</h3>
           <ol>
-            <li>Easiest way to include web fonts</li>
-            <li>Link to the google stylesheet like all stylesheets</li>
+            <li>Easiest way to include fancy web fonts</li>
+            <li>Link to the google stylesheet in the head</li>
             <li>Separate multiple Google fonts with pipe | character</li>
             <li>Fonts do add load time, so use sparingly</li>
-            <li>Fonts will always render differently across browsers</li>
-            <li>Add font stylesheets before your actual stylesheet (cascade)</li>
+            <li>Fonts will ALWAYS render differently across browsers</li>
+            <li>Add font stylesheets before your actual stylesheet or reset (cascade)</li>
           </ol>
-          <pre><code>&lt;link href='http://fonts.googleapis.com/css?family=Righteous|Cherry+Swash' rel='stylesheet' type='text/css'&gt;</code></pre>
+          <pre><code>
+          &lt;head&gt;
+          &lt;link href='http://fonts.googleapis.com/css?family=Righteous|Cherry+Swash' rel='stylesheet' type='text/css'&gt;
+          (reset and other stylesheets here)
+          &lt;/head&gt;
+          </code></pre>
+
+          <pre><code>
+            .class1 { 
+                font-family: "Cherry Swash", times, serif;
+                }
+
+            .class2 { 
+                font-family: "Righteous", arial, sans-serif;
+                }
+          </code></pre>
+
+          <div style="color: deeppink; font-family: 'Cherry Swash';">This is what Cherry Swash looks like.</div>
+          <div style="color: darkcyan; font-family: 'Righteous';">This is what Righteous looks like.</div>
         </section>
 
         <!-- Exercise-->
         <section>
           <h3>Let's Develop It</h3>
-          <p class="green">Find 2 Google web fonts you would like to use &amp; include on your site</p>
+          <p class="green">Find two Google web fonts you would like to use &amp; include on your site</p>
           <ol>
             <li><a href="https://www.google.com/fonts/" target="_blank">Google Web Fonts</a></li>
             <li>Include the stylesheet in your head section</li>
-            <li>Use the font in your website</li>
+            <li>Add the font to an element in your stylesheet</li>
           </ol>
         <pre><code>&lt;link href='http://fonts.googleapis.com/css?family=Righteous|Cherry+Swash' rel='stylesheet' type='text/css'&gt;</code></pre>
         </section>
@@ -197,36 +230,31 @@
 
           <pre><code>
             .divb {
-              background-color: red;
+              background-color: gray;
               color: white;
               margin: 5%;
               padding: 40px;
               position: relative: 
-              top: -.5;
-              right: 5%;
+              top: -.5em;
+              right: 10%;
               bottom: auto;
               left: auto;
               width: 20%;
             }
           </code></pre>
 
-          <p class="green">Once it is relatively positioned, we can add top, right, bottom, and left as indicated above.</p>
+          <p class="green">Once it is relatively positioned, we can add top, right, bottom, and left as indicated above to offset it from the normal flow.</p>
          
         </section>
        
        
-
-
-
-
-
        <!-- Absolute positioning-->
        <section >
          <h3>Absolute Positioning</h3>
          <div class = "left-align">
          <ul>
          <li>Positions element outside of the normal flow.</li>
-         <li>An absolutely positioned element is offset from its container block, positioned relative.</li>
+         <li>An absolutely positioned element is offset from its container block (positioned relative)</li>
          <li>Its container block is the first element that has a position other than static.</li>
          <li>If no such element is found, the container block is &lt;html>.</li>
          <li>Other elements act as if it's not there.</li>
@@ -239,7 +267,7 @@
          <h3>Absolute Positioning</h3>
          <p>The "absolute" value will take the element out of the normal flow and position it in relation to the window (or the closest non-static element).</p>
 <pre><code class = "html">
-  .top{
+  .top {
     position: absolute; 
     top: -40px; 
     right: 10px; 
@@ -247,7 +275,7 @@
   }
 </code></pre>
 <pre><code class = "html">
-  .bottom{
+  .bottom {
     position: absolute; 
     bottom: -40px; 
     left:60px; 
@@ -265,8 +293,36 @@
          </div>
          </div>
        </section>
+
+
+<!-- Exercise-->
+        <section>
+          <h3>Let's Develop It</h3>
+          <p class="green">Let's make our third .divc absolutely positioned to the top of the containing element.</p>
+
+          <pre><code>
+            .divc {
+              background-color: blue;
+              color: white;
+              margin: 5%;
+              padding: 40px;
+              position: absolute;
+              top: 0;
+              right: auto;
+              bottom: auto;
+              left: auto;
+              width: 20%;
+            }
+          </code></pre>
+
+          <p>If there is no containing element for divc, the containing element is &lt;html></p>
+         
+        </section>
+
+
+
        <section>
-       	<h3>Example: Absolute Positioning</h3>
+       	<h3>More: Absolute Positioning</h3>
        	<div class="left left-align" style="width: 45%;">
        	<p>Here's an example of an image with a caption absolutely positioned over top of it.</p>
        	<br/>
@@ -304,10 +360,31 @@
        </section>
        <section>
        	<h3>Let's Develop it!</h3>
-       	<p>Let's add some positioning.</p>
-       	<p>Let's create a div that contains an image and a caption, and position the caption absolutely overtop the image.</p>
+       	<p class="green">Let's add some more positioning.</p>
+        <ol>
+       	<li>Let's create a div with a class of "pos". Position the div relatively.</li>
+        <li>Add a medium sized image inside the div with a caption below. The caption should have a class of "caption". </li>
+        <li>Position that caption absolutely overtop the image.</li>
+        </ol>
+
+        <pre><code>            .pos {
+              background-color: yellow;
+              padding: 0;
+              position: relative;
+              top: 0;
+              width: 20%;
+            }
+
+            .caption {
+              position: absolute;
+              top: -2em;
+              width: 80%;
+              z-index: 9;
+            }
+          </code></pre>
        	
        </section>
+
        <!-- Float-->
        <section>
          <h3>Float</h3>
@@ -346,9 +423,21 @@
        
        <section>
        <h3>Using floats to place elements side by side</h3>	
-       <p>If you want two block level elements to be side by side, you need to float both elements. One left, and one right.</p>
+       <p>If you want two block level elements to be side by side, you may float both elements. One left, and one right.</p>
        <img src="images/example-float-column.png" />
        </section>
+
+       <section>
+       <h3>Using float: left to place two or more elements side by side</h3> 
+       <p>If you want two or more block level elements to be side by side, you can to float: left all elements.</p>
+       <img src="images/example-left-float.jpg" style="float: left;" />
+       <img src="images/example-left-float.jpg" style="float: left;" />
+       <img src="images/example-left-float.jpg" style="float: left;" />
+
+       <p>But how do you stop the floating?</p>
+       </section>
+
+
        <!-- Clear-->
        <section>
          <h3>Clear</h3>
@@ -369,14 +458,14 @@
  <pre><code class ="html">
    .float{
      float:left;
-     width:50px;
+     width: 100px;
      background:yellow;
    }
    .clear-left{
      clear:left
    }
  </code></pre>
-         <div style ="float:left;width:50px;background:yellow; color:black; ">
+         <div style ="float:left;width:100px;background:yellow; color:black; ">
            hi<br/>
            hi<br/>
            hi<br/>
@@ -385,15 +474,16 @@
          <div class = "left-align">Not floating element</div>
          <div class = "left-align" style="clear: left;">Non-floating element with a class of <strong>.clear-left</strong></div>
         </section>
-
-
-
-
-        
+     
         <!-- Exercise -->
        <section>
          <h3>Let's Develop It</h3>
-         <p>Let's float our side bar and content areas.</p>
+         <p class="green">Let's float our sidebar and content areas so that they are side-by-side</p>
+         <ol>
+         <li>Remember width = element width + padding + border</li>
+         <li>You may have to make the width smaller so everything fits</li>
+         <li>The header div should appear above and the footer div below the sidebar and content area.
+         </ol>
        </section>       
 
 
