@@ -1,0 +1,229 @@
+body {
+	background-color: lightpink;
+	background-image: url('images/paisley.png');
+	color: purple;
+	font-family: arial, sans-serif;
+	width: 90%;
+	margin: 0 auto;
+}
+
+a:link	{	background-color: red;
+            color: yellow;
+            font-weight: bold;
+            font-style: italic;
+         } 
+
+a:visited {	background-color: lime;	}
+
+a:hover   {	background-color: aqua;	} 
+
+a:active  {	background-color: yellow; } 
+  
+p {
+  	color: deeppink;
+  	margin-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: .5em;
+}
+
+h1 {
+	font-family: "Cherry Swash", sans-serif;
+}
+
+h3 {
+	font-family: "Krona One", serif;
+	color: blue;
+}
+
+table {
+	width: 50%;
+}
+
+th {
+	border: 1px solid blue;
+	font-weight: bold;
+}
+
+td {
+	border: 1px solid lime;
+}
+
+ol { 
+	background-color: pink;
+	color: purple;
+	font-weight: bold;
+	list-style-type: upper-alpha;
+	margin: 2px;
+	padding: 2px;
+	width: 50%;
+}
+
+ul { 
+	background-color: lightBlue;
+	list-style-type: square;
+	font-weight: bold;
+	color: deeppink;
+	margin: 2px;
+	padding: 2px;
+	width: 50%;
+}
+
+li {
+	margin: 2px;
+	padding: 2px;
+}
+
+h1 {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+h5 {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+h6 {
+	font-size: .8em;
+	font-weight: bold;
+}
+
+em, i {
+	font-style: italic;
+}
+
+strong, b {
+	font-weight: bold;
+}
+
+
+
+
+/* This is the one id */
+#TheOne {
+	background-color: yellow;
+	border: 5px solid red;
+	font-size: 2em;
+	font-style: italic;
+	font-weight bold;
+	height: 3em;
+	text-align: center;
+	width: 25%;
+}
+
+.pos { 	position: relative;
+		background-color: red;
+		padding: 20px;}
+
+.caption {  background-color: #000;
+			color: deeppink;
+			font-size: 2em;
+			position: absolute;
+			top: 260px;
+			z-index: 2;
+			}
+
+
+.diva {
+              background-color: red;
+              color: white;
+              margin: 5%;
+              padding: 40px;
+              width: 20%;
+            }
+
+.divb {
+      background-color: gray;
+              color: white;
+              margin: 5%;
+              padding: 40px;
+              position: relative; 
+              top: -.5em;
+              right: 10px;
+              bottom: auto;
+              left: auto;
+              width: 20%;
+    }
+
+.divc {
+  background-color: blue;
+  color: white;
+  margin: 5%;
+  padding: 40px;
+  position: absolute;
+  top: 1700px;
+  width: 20%;
+}
+
+.fun {
+	font-family: "comic sans ms";
+	font-size: 1.5em;
+}
+
+.nice { font-size: 3em;
+		text-transform: uppercase;}
+
+.kitten {
+	width: 50%;
+}
+
+.header {
+	background-color: yellow;
+	padding: 20px;
+	margin: 40px 0 0 0;
+}
+
+.sidebar {
+    background-color: red;
+    border: 20px solid aqua;
+    border-radius: 10%;
+    float: left;
+    padding: 20px;
+    margin: 0 0 0 0;
+    width: 30%;
+}
+
+.content {
+	background-color: green;
+	padding: 20px;
+	margin: 0 0 0 0;
+	width: 60%;
+	float: right;
+}
+
+.footer {
+	background-color: aqua;
+	border-top: 10px dotted black;
+	clear: both;
+	padding: 20px;
+	margin: 40px 0 0 0;
+}
+
+.tootsie {
+	background-color: pink;
+	font-style: italic;
+	font-size: 2em;
+}
+
+.fudge {
+	background-color: red;
+	font-style: italic;
+}
+
