@@ -8,7 +8,7 @@
 
 		<meta name="description" content="This is the official Girl Develop It Core HTML/CSS curriculum. It was developed through the contributions of Pamela Fox, Alexis Goldstein, Erin M. Kidwell, Izzy Johnston, and Jen Myers.
 
-    The course is meant to be taught in 4 or 6 two-hour sections. If you are teaching a 4 section course, you can ignore classes 5 and 6 without losing any impact or information. Each of the slides and practice files are customizable according to the needs of a given class or audience.">
+		The course is meant to be taught in 4 or 6 two-hour sections. If you are teaching a 4 section course, you can ignore classes 5 and 6 without losing any impact or information. Each of the slides and practice files are customizable according to the needs of a given class or audience.">
 		<meta name="author" content="Girl Develop It">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -22,7 +22,7 @@
 		<!-- dark editor--><link rel="stylesheet" href="reveal/lib/css/dark.css">
 
 		<!-- If use the PDF print sheet so students can print slides-->
-		
+
 		<link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
 
 		<!--[if lt IE 9]>
@@ -38,439 +38,333 @@
 
 
 			<div class="slides">
-			  <!-- Opening slide -->
+				<!-- Opening slide -->
+				<section>
+					<img src = "images/gdi_logo_badge.png">
+					<h3>Introduccion a HTML y CSS</h3>
+					<h4>Clase 3</h4>
+				</section>
 
-        <!-- Welcome-->
-        <section class="hide-pdf">
-          <h3>Welcome to HTML and CSS Class 3!</h3>
-          <div class = "left-align">
-          <p class="green">Slides at: <a href="http://gdila.github.io/gdi-core-html-css/">http://goo.gl/fPvVVS</a></p>
-          <p>Please open your work from last week:</p>
-          <ol>
-            <li>Open Sublime</li>
-            <li>Drop last week's folder on Sublime to open it as a project</li>
-            <li>Open index.html &amp; style.css in Sublime</li>
-            <li>Open index.html in Chrome</li>
-            <li>Open the Chrome Inspector</li>
-          </ol>
-          </div>
-        </section>
+				<!-- Welcome-->
+				<section>
+					<h3>Hola!</h3>
+					<div class = "left-align">
+						<p>Girl Develop It esta para ayudarlos, con programas asequibles y accesibles, a aprender software a través de la tutoría y la instrucción práctica.</p>
+						<p class ="green">Tenemos algunas "reglas"</p>
+						<ul>
+							<li>Estamos aqui por ti!</li>
+							<li>Cada pregunta es importante</li>
+							<li>Ayudense unos a otros</li>
+							<li>Pasenla bien</li>
+						</ul>
+					</div>
+				</section>
 
-        <section>
-          <img style="border: 0; box-shadow: none;" src = "images/gdi_logo_badge.png">
-          <h3>HTML and CSS 101</h3>
-          <h4>Class 3</h4>
-        </section>
-        
-         <section>
-        	<h3>What we'll be making today</h3>
-        	<div class="left" style="width: 45%;">
-        		<p>Today we will be adding divs and spans to create a header, footer, sidebar and a content area.</p>
-        	</div>
-        	<div class="right" style="width: 45%;">
-        		<img src="images/session2site.png">
-        	</div>
-        </section>
-        
-        <!-- Inline vs. block-->
-        <section>
-          <h3>Inline vs Block</h3>
-          <div class = "left" style="width: 50%; text-align: left;">
-            <div class = "fragment">
-              <p>So far, we have mostly seen <span class="green">"block"</span> elements.</p>
-              <p>They appear on the next line, like paragraphs.</p>
-            </div> 
-            <br/><br/>
-            <div class = "fragment">
-              <p>There are also <span class="green">"inline"</span> elements.</p>
-              <p>They appear on the same line that they are written on.</p>
-            </div>
-          </div>
-          <div class="right fragment">
-          	<img src="images/example-blockinline.png" alt="example of inline and block elements" />
-          </div>
-        </section>
-        <!-- Inline v block again-->
-        <section>
-          <h3>Block &amp; Inline Elements,</h3>
-          <ul>
-            <li>CSS divides HTML into two types: inline and block.</li>
-            <li>After block elements, browsers render a new line.</li>
-            <li>Inline elements: img, a, br, em, strong</li>
-            <li>Block elements: p, h1, ul, ol, li, hr, almost everything else</li>
-          </ul>
-        </section>
-        <section> 
-        	<h3>Element: Div</h3>
-        		<ul>
-	        		<li>Block level element. Each new div is rendered on a new line.</li>
-	        		<li>A division, or section of content within an HTML page.</li>
-	        		<li>Used to group elements to format them with CSS.</li>
-	        		<li>Apply IDs and classes to divs to control their styles with CSS.</li>
-        		</ul>
+				<section>
+					<h3>Que haremos hoy?</h3>
+					<div class="left" style="width: 45%;">
+						<p>Hoy vamos a hacer un sitio desde cero utilizando divs y spans para crear un encabezado, un pie de página, una barra lateral y un área de contenido.</p>
+					</div>
+					<div class="right" style="width: 45%;">
+						<img src="images/session2site.png">
+					</div>
+				</section>
+
+				<!-- Inline vs. block-->
+				<section>
+					<h3>ALINEADOS vs BLOQUES</h3>
+					<div class = "left" style="width: 50%; text-align: left;">
+						<div class = "fragment">
+							<p>Hasta ahora hemos  visto mayormente  <span class="green">en bloque </span>los elementos</p>
+							<p>Ellos aparecen en la siguiente linea como paragrafos</p>
+						</div>
+						<br/><br/>
+						<div class = "fragment">
+							<p>Tambien aparecen <span class="green">"alineados "</span>los elementos</p>
+							<p>ellos aparecen en la misma linea donde estan escritos.</p>
+						</div>
+					</div>
+					<div class="right fragment">
+						<img src="images/example-blockinline.png" alt="ejemplo de elementos alineados y en bloque" />
+					</div>
+				</section>
+
+				<!-- Inline v block again-->
+				<section>
+					<h3>ELEMENTOS ALINEADOS Y EN BLOQUE,</h3>
+					<ul>
+						<li>CSS divide HTML en dos tipos: alineados y en bloques.</li>
+						<li>Despues de los elementos en bloque,los buscadores muestran una nueva linea.</li>
+						<li>Elementos en linea: img, a, br, em, strong</li>
+						<li>Elementos en bloque: p, h1, ul, li, es decir, casi todos los otros elementos</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>ELEMENTO: Div</h3>
+					<ul>
+						<li>Elemento a nivel de bloque.Cada nuevo div se representa en una nueva linea.</li>
+						<li>Una division, o seccion del contenido en una pagina de html.</li>
+						<li>Se utiliza para agrupar elementos para darles formato con CSS.
+						<li>Aplicar los IDs and Clases de divs para controlar sus estilos con CSS.</li>
+					</ul>
 <pre><code>&lt;div>
-   &lt;p>Content&lt;p>
-   &lt;p>Content&lt;p>
+	&lt;p>Contenido&lt;p>
+	&lt;p>Contenido&lt;p>
 &lt;/div></code></pre>
-<pre><code>&lt;div id="header">
-   &lt;h1>Main Heading&lt;h1>
+<pre><code>&lt;div id="encabezamiento">
+	&lt;h1>Encabezamiento principal&lt;h1>
 &lt;/div></code></pre>
-<pre><code>&lt;div class="sub-content">
-   &lt;p>Some more content&lt;p>
+<pre><code>&lt;div class="sub-contenido">
+	&lt;p>Algun otro contenido &lt;p>
 &lt;/div></code></pre>
-        </section>
-  <!-- Div continued-->
-        <section>
-          <h3>Grouping elements with div</h3>
-          <div class = "left-align">
-          <ul>
-          <li>The div tag is used everywhere to group elements together into sections.</li>
-          <li>For example, what if we want the first 2 paragraphs of a section to be right-aligned, purple &amp; bold, but we don't want any other paragraphs to be right-aligned?</li>
-          <li>We would wrap them in a div element to style them differently.</li>
-          </ul>
-           </div>
-        </section> 
-        
-        <section>
-          <h3>Grouping elements with div, cont.</h3>
-<pre><code class = "html">
-.align-right{
-  text-align:right;
-  color: green; 
-  font-weight: bold;
-}
-</code></pre>
+				</section>
 
-<pre><code class ="html">
-&lt;div class="align-right">
-  &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit&lt;/p>
-  &lt;p>Sed do eiusmod tempor incididunt ut labore et dolore.&lt;/p> 
+				<!-- Div continued-->
+				<section>
+					<h3>Agrupando elementos con div</h3>
+					<div class = "left-align">
+						<ul>
+							<li>La etiqueta div se utiliza siempre para agrupar elementos juntos en secciones.</li>
+							<li>Por ejemplo, ¿qué pasaría si queremos que los 2 primeros párrafos de una sección sean alineados a la derecha, que sea purpura y resaltado, pero no queremos ningun otro párrafo sea alineado a la derecha?</li>
+							<li>Nosotros debemos agruparlos, de una manera diferente, con el estilo de un elemento div.</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h3>Agrupamos los elementos con contenido div</h3>
+<pre><code class = "html">.align-right{
+	text-align:right;
+	color: green;
+	font-weight: bold;
+}</code></pre>
+
+<pre><code class ="html">&lt;div class="align-right">
+	&lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit&lt;/p>
+	&lt;p>Sed do eiusmod tempor incididunt ut labore et dolore.&lt;/p>
 &lt;/div>
-&lt;p>Magna aliqua. Ut enim ad minim veniam.&lt;/p> 
-&lt;p>Quis nostrud exercitation ullamco.&lt;/a>
-</code></pre>
-<div style = "text-align:right;font-weight: bold; font-size: 70%;" class = "green">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-  <p>Sed do eiusmod tempor incididunt ut labore et dolore.</p>
-</div>
-<div class = "left-align" style="font-size: 70%;">
-<p>Magna aliqua. Ut enim ad minim veniam.</p>
-<p>Quis nostrud exercitation ullamco.</a>
+&lt;p>Magna aliqua. Ut enim ad minim veniam.&lt;/p>
+&lt;p>Quis nostrud exercitation ullamco.&lt;/a></code></pre>
+					<div style = "text-align:right;font-weight: bold; font-size: 70%;" class = "green">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						<p>Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+					</div>
+					<div class = "left-align" style="font-size: 70%;">
+						<p>Magna aliqua. Ut enim ad minim veniam.</p>
+						<p>Quis nostrud exercitation ullamco.</a>
+					</div>
+				</section>
 
-</div>
-        </section> 
-        <section>
-          <h3>Let's Develop It</h3>
-         <ol>
-         <li class="left-align">Let's add divs to separate our page content into different sections on our page.</li>
-         <li class="left-align">Create a header, content area, sidebar, and a footer.</li>
-         <li class="left-align">Add some CSS to change the background color of each section to something different.</li>
-         <li class="left-align">View the results in your browser.</li>
-         <li class="left-align">Find the HTML, then the CSS that you added in the Chrome Inspector.
-         </ol>       
-        </section> 
-        <section>
-        	<h3>Element: Span</h3>
-        	<ul>
-        	<li>Inline element. Each new span is rendered next to each other &amp; only wraps when it reaches the edge of the containing element.</li>
-        	<li>Can be used to apply styles to text inline so as not to break the flow of content.</li>
-        	</ul>
-        </section>     
-        <!-- Span -->
-        <section>
-          <h3>Span</h3>
-          <p>Span is used to apply a specific style inline</p>
-          
-<pre><code class ="html">
-.yellow{
-  color:yellow;
-}
-</code></pre>
+				<section>
+					<h3>Manos a la obra!</h3>
+					<p class="left-align">Vamos a crear un sitio usando divs y separando el contenido dentro de las diferentes secciones en nuestra pagina.</p>
+					<p class="left-align">Creemos un encabezamiento, un area de contenido, una barra lateral y un pie de pagina.</p>
+				</section>
 
-<pre><code class ="html">
-&lt;p>Paragraph with &lt;span class ="yellow">yellow&lt;/span> text.&lt;/p>
-</code></pre>
+				<section>
+					<h3>Elemento: Span</h3>
+					<ul>
+						<li>Elemento alineado. Cada nuevo tramo se representa uno a continuacion del otro, solo se  envuelve cuando alcanza el borde del elemento que contiene.</li>
+						<li>Se puede utilizar para aplicar estilos a texto en línea a fin de no romper el flujo de contenido.</li>
+					</ul>
+				</section>
 
-<p>Paragraph with <span class ="yellow">yellow</span> text.</p>
-        </section>
-        <!-- Exercise-->
-         <section>
-          <h3>Let's Develop It</h3>
-         <ol><li>Let's add 2 spans with different classes to our content (index.html) to help highlight some text.</li>
-         <li>Create three styles in your style.css to change the styles of the selected text.</li>
-         <li>View the results in your browser.</li>
-         <li>Find the HTML and CSS you added in the Chrome Inspector.</li>
-         </ol>
+				<!-- Span -->
+				<section>
+					<h3>Span</h3>
+					<p>El span se usa para aplicar un estilo especifico dentro de la linea</p>
+<pre><code class ="html">.yellow {
+	color:yellow;
+}</code></pre>
+<pre><code class ="html">&lt;p>Paragraph with &lt;span class ="yellow">yellow &lt;/span> text.&lt;/p></code></pre>
+					<p>Paragraph with<span class ="yellow"> yellow</span> text.</p>
+				</section>
 
-        </section>      
-        <!-- Pseudo class-->
-        <section>
-          <h3>Pseudo-classes, more CSS for links</h3>
-          <div class ="left left-align" style="width:50%">
-          <p>Changing the format of a link when you hover over it is accomplished by using pseudo-classes.</p>
-          <br/>
-          <p>CSS pseudo-classes are used to add special effects to some selectors.</p>
-          </div>
-          Syntax:	
-<pre><code class ="html">
-selector:pseudo-class
+				<!-- Exercise-->
+				<section>
+					<h3>Manos a la obra!</h3>
+					<p>Vamos a agregar algunos span a nuestro contenido para subrayar un texto. </p>
+				</section>
+
+				<!-- Pseudo class-->
+				<section>
+					<h3>Pseudo clases, mas CSS por enlace</h3>
+					<div class ="left left-align" style="width:50%">
+						<p>Cambiamos el formato de un enlace pasando este sobre el mismo mediante el uso de pseudo-clases.</p>
+						<br/>
+						<p> En CSS las pseudo-clases son usadas para añadir un efecto especial a agunos selectores.</p>
+					</div>
+					Syntax:
+<pre><code class ="html">selector:pseudo-class
 {
-  property:value;	
-}
-</code></pre>
-          Example:
-<pre><code class ="html">
-a:link
+	property:value;
+}</code></pre>
+					Example:
+<pre><code class ="html">a:link
 {
-  text-decoration: none;
-}
-</code></pre>
-        </section>
-        
-        <!-- Pseudo class-->
-        <section>
-          <h3>Pseudo-classes, more CSS for links</h3>
-<pre><code class ="html">
-  a:link	  {color: red;}     /* unvisited link */
-  a:visited	{color: lime;}    /* visited link */
-  a:hover	  {color: aqua;}    /* mouse over link */
-  a:active	{color: yellow;} /* selected link */
-</code></pre>
-          <p>Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective!</p>
-          <p>Note: a:active MUST come after a:hover in the CSS definition in order to be effective!</p>
-        </section>
-       
-        <!-- Exercise-->
-        <section>
-          <h3>Let's Develop It</h3>
-          <p>Add pseudo classes to your links</p>
+	text-decoration: none;
+}</code></pre>
+				</section>
 
-          <pre><code class ="html">
-  /* unvisited link */
-  a:link    {background-color: red;
-             color: yellow;
-             font-weight: bold;
-             font-style: italic;} 
+				<!-- Pseudo class-->
+				<section>
+					<h3>Pseudo-clases, mas CSS por enlace</h3>
+<pre><code class ="html">a:link  {color:#FF0000;} /* unvisited link */
+a:visited {color:#00FF00;} /* visited link */
+a:hover {color:#FF00FF;} /* mouse over link */
+a:active  {color:#0000FF;} /* selected link */</code></pre>
+					<p>Nota: a:hover debe escribirse despues de a:link y a:visited para ser efectiva!</p>
+					<p>Nota: a:active debe venir despues de a:hover en la definicion de CSS para ser efectiva</p>
+				</section>
 
-  /* visited link */
-  a:visited {background-color: lime;}
+				<!-- Exercise-->
+				<section>
+					<h3>Manos a la obra!</h3>
+					<p>Adicione pseudo clases a sus enlaces</p>
+				</section>
 
-  /* mouse over link */
-  a:hover   {background-color: aqua;} 
+				<!-- Box model-->
+				<section>
+					<h3>Modelo de caja</h3>
+					<img src ="images/box-model.png"/>
+				</section>
 
-  /* selected link */
-  a:active  {background-color: yellow;} 
-  
-</code></pre>
-        </section>
-        
-        <!-- Box model-->
-        <section>
-          <h3>Box Model</h3>
-          <img src ="images/box-model.png"/>
-        </section>
-        
-        <!-- Padding -->
-        <section>
-          <h3>Padding</h3>
-          <p>Space between the border and the content</p>
-          <img src ="images/box-model.png"/>
-        </section>
-        <section>
-          <h3>Padding</h3>
-          <p>Space between the border and the content</p>
-          <p>Adds to the total width of the box.</p>
-          <img src ="images/box-model-padding.png"/>
-        </section>
-        
-        <section>
-          <h3>Padding</h3>
-          15 pixels on all sides
-<pre><code class ="html">
-padding: 15px;
-</code></pre>
-          10 pixels on top only
-<pre><code class ="html">
-padding-top: 10px;
-</code></pre>
-          10 on top, 5 on right, 3 on bottom, 5 on left
-<pre><code class ="html">
-padding: 10px 5px 3px 5px;
-</code></pre>  
-        </section>
-       
-        <section>
-          <h3>Padding</h3>
-          <p>Four values<p>
-<pre><code class = "html">
-  padding: top right bottom left;
-</code></pre>
-          <p>Two values</p>
-<pre><code class = "html">
-  padding: top/bottom right/left;
-</code></pre>
-          <p>One value</p>
-<pre><code class = "html">
-  padding: all;
-</code></pre>
-        </section>
-       
-        <section>
-          <h3>Padding</h3>
-<pre><code class ="html">
-  padding: 10px 20px 30px 40px;
-</code></pre>
-        <img src ="images/box-model-padding2.png"/>
-        </section>
-       
-        <!-- Border-->
-        <section>
-          <h3>Border</h3>
-          <p>The edge around the box, specified as "thickness, style, color."</p>
-          <img src ="images/box-model-border.png">
-        </section>
-        
-        <section>
-          <h3>Border</h3>
-          <p>A solid red border</p>
-<pre><code class = "html">
-  border: 1px solid red;
-</code></pre>
-          <p>A thick dotted black top border</p>
-<pre><code class ="html">
-  border-top: 4px dotted black;
-</code></pre>
-          <p>Two diﬀerent border styles</p>
-<pre><code class ="html">
-  border-top: 3px solid red;
-  border-bottom: 10px dashed black;
-</code></pre>
+				<!-- Padding -->
+				<section>
+					<h3>Padding</h3>
+					<p>Espacio entre el borde y el contenido</p>
+					<img src ="images/box-model.png"/>
+				</section>
 
-<div style="border-top: 3px solid red; border-bottom: 10px dashed black; margin: 40px; padding: 20px; background-color: silver">This div has a thin solid red border on top and a thick black dashed border on bottom</div>
+				<section>
+					<h3>Padding</h3>
+					<p>Espacio entre el borde y el contenido</p>
+					<p>Se agrega al ancho total de la caja.</p>
+					<img src ="images/box-model-padding.png"/>
+				</section>
 
-        </section>
-       
-        <section>
-          <h3>Border - Other Properties</h3>
-<pre><code class ="html">
-  border-width: 10px;
-  border-style: dotted;
-  border-color: purple;
-</code></pre>
-          <p>You can specify each property separately, or all three together.</p>
-        
+				<section>
+					<h3>Padding</h3>
+					15 pixeles en todos los lados
+<pre><code class ="html">padding: 15px;</code></pre>
+					10 pixeles solo en la parte superior
+<pre><code class ="html">padding-top: 10px;</code></pre>
+					10 en la parte superior, 5 en la derecha, 3 en el fondo, 5 en la parte izquierda
+<pre><code class ="html">padding: 10px 5px 3px 5px;</code></pre>
+				</section>
 
-<pre><code class ="html">
-  border: 10px dotted purple;
-</code></pre> 
+				<section>
+					<h3>Padding</h3>
+					<p>Cuatro valores<p>
+<pre><code class = "html">padding: top right bottom left;</code></pre>
+					<p>Dos valores</p>
+<pre><code class = "html">padding: top/bottom right/left;</code></pre>
+					<p>Un valor</p>
+<pre><code class = "html">padding: all;</code></pre>
+				</section>
 
-<div style="border: 10px dotted purple; margin: 40px; padding: 20px; background-color: silver">This div has a 10px dotted purple border and a 20px padding</div>
+				<section>
+					<h3>Padding</h3>
+<pre><code class ="html">padding: 10px 20px 30px 40px;</code></pre>
+					<img src ="images/box-model-padding2.png"/>
+				</section>
 
-</section>
+				<!-- Border-->
+				<section>
+					<h3>Border</h3>
+					<p>El borde alrededor de la caja, especificando espesor, estilo y color."</p>
+					<img src ="images/box-model-border.png">
+				</section>
 
-<!-- Exercise -->
-    <section>
-      <h3>Let's Develop it!</h3>
-      <ol><li>When adding code to a page, start from the top left and work your way across then down, like a typewriter.</li>
-      <li>Add some padding to your divs.</li>
-      <li>Add any border to your sidebar div.</li>
-      <li>Add a top border to your footer div.</li>
-      </ol>
-    </section>
+				<section>
+					<h3>Border</h3>
+					<p>Un borde rojo solido</p>
+<pre><code class = "html">border: 1px solid #ff0000;</code></pre>
+					<p>Un borde superior de puntos negros gruesos</p>
+<pre><code class ="html">border-top: 4px dotted #000000;</code></pre>
+					<p>Dos estilos diferentes de bordes</p>
+<pre><code class ="html">border-top: 1px solid #ff0000;
+border-bottom: 4px dotted #000000;</code></pre>
+				</section>
 
-        <!-- Margin -->
-        <section>
-          <h3>Margin</h3>
-          <p>The transparent area around the box that separates it from other elements.</p>
-          <img src ="images/box-model-margin.png"/>
-        </section>
-        
-        <section>
-          <h3>Margin</h3>
-          <p>15 pixels on all sides</p>
-<pre><code class = "html">
-  margin: 15px;
-</code></pre>
-          <p>10 on top, 5 on right, 3 on bottom, 5 on left</p>
-<pre><code class ="html">
-  margin: 10px 5px 3px 5px;
-</code></pre>
-          <p>10 pixels on top</p>
-<pre><code class = "html">
-  margin-top: 10px;
-</code></pre>
+				<section>
+					<h3>Border - Otras propiedades</h3>
+<pre><code class ="html">border-width: 10px;
+	border-style: dashed;
+	border-color: #666666;</code></pre>
+					<p>Ud. debe especificar cada propiedad por separado, o las tres propiedades unidas.</p>
+				</section>
 
-<div style="margin: 10px 40px; padding: 20px; background-color: silver">This div has a top margin of 10px</div>
-        </section>
-        
-        <section>
-          <h3>Auto Margin</h3>
-          <p>If a margin is set to auto on a box that has width, it will take up as much space as possible.</p>
-          <p>CENTERED</p>
-<pre><code class ="html">
-  margin: auto;
-  width: 300px;
-</code></pre>
+				<!-- Margin -->
+				<section>
+					<h3>Margin</h3>
+					<p>El area transparente alrededor de la caja queda separada de ella por otros elementos.</p>
+					<img src ="images/box-model-margin.png"/>
+				</section>
 
-<div style="margin: auto; width: 400px; padding: 20px; background-color: silver">This div is centered</div>
+				<section>
+					<h3>Margin</h3>
+					<p>15 pixeles en todos los lados</p>
+<pre><code class = "html">margin: 15px;</code></pre>
+					<p>10 en la parte superior, 5 en la derecha, 3 en el fondo, 5 en la izquierda</p>
+<pre><code class ="html">margin: 10px 5px 3px 5px;</code></pre>
+					<p>10 pixeles en la parte superior</p>
+<pre><code class = "html">margin-top: 10px;</code></pre>
+				</section>
 
-          <p>FLUSH-RIGHT</p>
-<pre><code class = "html">
-  margin-left: auto;
-  margin-right: 5px;
-  width: 400px;
-</code></pre>
-<div style="margin-left: auto;
-  margin-right: 5px; width: 400px; padding: 20px; background-color: silver">This div is flush right</div>
-        </section>
-        
-    <!-- Exercise -->
-		<section>
-			<h3>Let's Develop it!</h3>
-			<ol>
-      <li>When adding padding and margins (&amp; border-radius), start from the top left and work clockwise to the right.</li>
-      <li>Add some margins to our divs.</li>
-      <li>Add some margins to our paragraphs and headers.</li>
-      </ol>
-		</section>
-        <!-- Width-->
-		<section>
-			<h3>Property: Width</h3>
-			<p>Sets the width of an element.</p>
-			<p>Does not include padding or borders, remember these add to the width.</p>
-      <p class="green">real width = width + padding + borders</p>
-      <p class="blue">margins not included!</p>
-		</section>
-		<!-- height-->
-		<section>
-			<h3>Property: Height</h3>
-			<p>Sets the height of an element.</p>
-			<p>Does not include padding or borders, remember these add to the width.</p>
-      <p class="green">real height = height + padding + borders</p>
-      <p class="blue">margins not included!</p>
-		</section>
-		<!-- Exercise -->
-		<section>
-			<h3>Let's develop it!</h3>
-			<div class="left-align">
-				<li>Set your sidebar width to 30%</li>
-        <li>Set your content width to 70%</li>
+				<section>
+					<h3>Margenes automatico</h3>
+					<p>Si un margen se establece automaticamente en una caja que tiene una anchura, ocupará tanto espacio como sea posible.</p>
+					<p>CENTRADO</p>
+<pre><code class ="html">margin: auto;
+width: 300px;</code></pre>
+					<p>EMPUJADO A LA DERECHA</p>
+<pre><code class = "html">margin-left: auto;
+margin-right: 5px;
+width: 300px;</code></pre>
+				</section>
+
+				<!-- Exercise -->
+				<section>
+					<h3> Manos a la obra!</h3>
+					<p>Adicionen algunos rellenos, bordes y margenes a nuestros divs. Centren nuestro documento en el buscador.</p>
+				</section>
+
+				<!-- Width-->
+				<section>
+					<h3>Propiedad: width</h3>
+					<p>Establece la anchura de un elemento.</p>
+					<p>Esto no incluye rellenos o bordes, recuerde que estos se adicionan a la anchura.</p>
+				</section>
+
+				<!-- height-->
+				<section>
+					<h3>Propiedad: height</h3>
+					<p>Establezca la altura de un elemento.</p>
+					<p>Esto no incluye rellenos o bordes, recuerde que estos se adicionan a la altura.</p>
+				</section>
+
+				<!-- Exercise -->
+				<section>
+					<h3>Manos a la obra!</h3>
+					<p>Adicione anchura y altura a cada div con CSS</p>
+				</section>
+
+				<section>
+					<h2>Preguntas?</h2>
+					<div style = "font-size:1200%; height:100%; margin-top:30%" class ="blue">?
+						<div class ="clear"></div>
+					</div>
+				</section>
 			</div>
-		</section>
-        <section>
-          <h2>Questions?</h2>
-          <div style = "font-size:1200%; height:100%; margin-top:30%" class ="blue">?
-            <div class ="clear"></div></div>
-        </section>
-      
-      </div>
-      
-      <footer>
-        <div class="copyright">
-          HTML/CSS ~ Girl Develop It ~
-          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
-        </div>
-      </footer>
+
+			<footer>
+				<div class="copyright">
+					HTML/CSS ~ Girl Develop It ~
+					<a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+				</div>
+			</footer>
 		</div>
 
 
