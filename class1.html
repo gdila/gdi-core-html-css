@@ -8,7 +8,7 @@
 
 		<meta name="description" content="This is the official Girl Develop It Core HTML/CSS curriculum. It was developed through the contributions of Pamela Fox, Alexis Goldstein, Erin M. Kidwell, Izzy Johnston, and Jen Myers.
 
-    The course is meant to be taught in 4 or 6 two-hour sections. If you are teaching a 4 section course, you can ignore classes 5 and 6 without losing any impact or information. Each of the slides and practice files are customizable according to the needs of a given class or audience.">
+		The course is meant to be taught in 4 or 6 two-hour sections. If you are teaching a 4 section course, you can ignore classes 5 and 6 without losing any impact or information. Each of the slides and practice files are customizable according to the needs of a given class or audience.">
 		<meta name="author" content="Girl Develop It">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -22,7 +22,7 @@
 		<!-- dark editor--><link rel="stylesheet" href="reveal/lib/css/dark.css">
 
 		<!-- If use the PDF print sheet so students can print slides-->
-		
+
 		<link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
 
 		<!--[if lt IE 9]>
@@ -36,735 +36,680 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-			  <!-- Opening slide -->
-        <section>
-          <img src = "images/gdi_logo_badge.png" style="border: 0; box-shadow: none;">
-          <h3>Beginning HTML and CSS</h3>
-          <h4>Class 1</h4>
-        </section>
-        
-        <!-- Welcome-->
-        <section class="hide-pdf">
-          <h3>Welcome!</h3>
-          <div class = "left-align">
-          <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-          <p class ="green">Some "rules"</p>
-          <ul>
-            <li>We are here for you!</li>
-            <li>Every question is important</li>
-            <li>Help each other</li>
-            <li>Have fun</li>
-          </ul>
-          </div>
-        </section>
-        
-        <section>
-          <h3>Welcome!</h3>
-          <div class = "left-align">
-          <p class = "blue">Tell us about yourself.</p>
-          <ul>
-            <li>Who are you?</li>
-            <li>What do you hope to get out of the class?</li>
-            <li>What is your favorite or dream vacation destination?</li>
-          
-          </ul>
-          </div>
-        </section>
-        
-        <!-- What is HTML?-->
-        <section>
-          <h3>What is HTML?</h3>
-          <p>HTML is the code that allows us to build websites</p>
-          <img src = "images/homepage-view.png">
-        </section>
-        
-        <section>
-          <h3>What is HTML?</h3>
-          <p>If you 'view the source', you see this</p>
-          <img src = "images/homepage-html.png">
-        </section>
-        
-        <!-- History of HTML-->
-        <section>
-          <h3>History of HTML</h3>
-          <ul>
-            <li class = "fragment">Invented by Tim Berners-Lee</li>
-            <li class = "fragment">Created "hypertext" to share scientific papers</li>
-            <li class = "fragment">First web page August 6, 1991</li>
-            <li class = "fragment">Standardized by w3 Consortium</li>
-          </ul>
-        </section>
-        
-        <section>
-          <h3>History of HTML</h3>
-          <ul>
-            <li class = "fragment"><span class = "yellow">H</span>yper<span class = "yellow">T</span>ext <span class = "yellow">M</span>arkup <span class = "yellow">L</span>anguage</li>
-            <li class = "fragment">Early 90s</li>
-            <li class = "fragment">HTML 4 in 1997</li>
-            <li class = "fragment">XHTML in 2000</li>
-            <li class = "fragment">HTML 5 in 2008</li>
-          </ul>
-        </section>
-        
-        <!-- Terms-->
-        <section>
-         <h3>Terms</h3>
-         <ul>
-           <li>
-            <div class = "green">Web design</div>
-            <div>The process of planning, structuring and creating a website</div>
-           </li>
-           <li>
-            <div class = "green">Web development</div>
-            <div>The process of programming dynamic web applications</div>
-           </li>
-           <li>
-            <div class = "green">Front end</div>
-            <div>The outwardly visible elements of a website or application</div>
-           </li>
-           <li>
-            <div class = "green">Back end</div>
-            <div>The inner workings and functionality of a website or application.</div>
-           </li>
-         </ul>
-        </section>
-        
-        <!-- Nitty gritty 1 - Clients and servers -->
-        <!-- <section>
-          <h3>Clients and servers</h3>
-          <p>How your computer accesses websites</p>
-          <img src = "images/client-server.png"/>
-        </section> -->
-        
-        <!-- Nitty gritty 2 - Tools -->
-        <section>
-          <h3>Tools</h3>
-          <ul>
-            <li>
-              <div class = "yellow">Browser</div>
-              <div>Chrome</div>
-              <div>Firefox</div>
-             </li>
-             <li>
-              <div class = "yellow">Development Toolkit</div>
-              <div>Chrome - Inspector</div>
-              <div>Firefox - Firebug</div>
-             </li>
-             <li>
-              <div class = "yellow">Text Editor</div>
-              <div>TextWrangler - Mac</div>
-              <div>Notepad ++ - Windows</div>
-              <div>Sublime Text - Linux, Mac or Windows</div>
-              <div>gedit - Linux</div>
-             </li>
-          </ul>
-        </section>
-       <!-- Commenting out sublime text intro so teachers can choose whether or not to use sublime text in class-->
-         <!-- intro to sublime text 2 -->
+				<!-- Opening slide -->
+				<section>
+					<img src = "images/gdi_logo_badge.png">
+					<h3>INTRODUCCI&Oacute;N A HTML Y CSS</h3>
+					<h4>Clase 1</h4>
+				</section>
 
-        <!-- <section>
-          <h3>Get Started: Sublime Text 2</h3>
-          <p class="left"><strong>We'll be using Sublime Text 2 in class today.</strong></p>
-          <ol>
-            <li>
-              <p>Download ST2 from www.sublimetext.com/2</p>
-            </li>
-            <li>
-              <p>Turn off Auto Correct &amp; Tab Completion<br/></p>
-              <p>Modify your the preferences / settings by adding these lines to the code:</p>              
-              <ul >
-                <li style="margin: 0 0 0 40px;">"tab_completion": false</li>
-                <li style="margin: 0 0 0 40px;">"auto_complete": false,</li>
-              </ul>
-            </li>
-          </ol>
-        </section> -->
-        <!-- Folder Structure -->
-         <section>
-          <h3>Get Started: Folder Structure</h3>
-          <p>All the files for your site should be stored within the same folder.</p>
-          
-          <div class="left" style="width: 45%;">
-          <p class="left-align"><strong>This includes:</strong></p>
-          <ul>
-            <li>HTML Files</li>
-            <li>CSS Files</li>
-            <li>Images</li>
-            <li>Script files</li>
-            <li>Anything else that will appear on your site</li>
-          </ul>
-          <p class="left-align"><small>Note: File names should not include spaces or special characters. File names ARE case sensitive.</small></p>
-          </div>
-          <div class="right" style="width: 45%;">
-            <img src="images/folderstructure1.png" />
-          </div>
-        </section>
-        <!-- Example of site we'll be making-->
-        <section>
-        	<h3>What we'll be building today</h3>
-        	<div class="left left-align" style="width: 45%;">
-        		<p>Today we will be learning how to code a site from scratch using paragraphs, headings, links, images, and lists.</p>
-        	</div>
-        	<div class="right" style="width: 45%;">
-        		<img src="images/session1site.png"/>
-        	</div>
-        </section>
-
-        <!-- Roles of HTML v CSS -->
-        <section>
-          <h3>Anatomy of a website</h3>
-          <div class = "blue"> Your Content</div>
-          <div><span class = "blue">+ HTML: </span>Structure</div>
-          <div><span class = "blue">+ CSS: </span>Presentation</div>
-          <div class = "blue">= Your Website</div>
-          <p>A website is a way to present your content to the world, using HTML and CSS to present that content &amp; make it look good.</p>
-        </section>
-        
-        <section>
-          <h3>Anatomy of a website</h3>
-          <div class = "yellow"> Concrete example</div>
-          <ul>
-            <li class ="fragment"><p>A paragraph is your content</p></li>
-            <li class = "fragment">
-              <div style = "font-size: 80%">Putting your content into an HTML tag to make it look like a paragraph is Structure</div>
-              <pre><code class ="html">
-                &lt;p>A paragraph is your content&lt;/p>
-              </code></pre>
-          </li>
-          <li class = "fragment">
-            <div style = "font-size: 80%">Make the font of your paragraph blue and 18pt is presentation</div>
-            <p class ="blue">A paragraph is your content</p>
-          </li>
-        </section>
-        
-        <!-- HTML element-->
-        <section>
-         <h3>Anatomy of an HTML element</h3>
-         <ul>
-           <li class = "fragment">
-             <strong class="blue">Element</strong>
-             <ul>
-               <li>An individual component of HTML</li>
-               <li>Paragraph, heading, table, list, div, link, image, etc.</li>
-              </ul>
-          </li>
-          <li class = "fragment">
-            <strong class="blue">Tag</strong>
-            <ul>
-              <li>Marks the beginning &amp; end of an element</li>
-               <li>Opening tag and Closing Tag
-               <li>Tags contain characters that indicate the tags purpose</li>
-<pre><code class ="html">&lt;tagname>Stuff in the middle&lt;/tagname></code></pre>
-              </li>
-               <li>
-<pre><code class ="html">&lt;p> This is a sample paragraph.&lt;/p></code></pre>
-              </li>
-            </ul>
-        </section>
-        <!--anatomy of a tag -->
-        <section>
-        	<h3>Tag Breakdown</h3>
-        	<img src="images/tagbreakdown.png" alt="Tag breakdown" style="border: none; box-shadow: none;" />
-        </section>
-        <section>
-         <h3>Anatomy of an HTML element</h3>
-         <ul>
-           <li class = "fragment">
-             <strong class="blue">Container Element</strong>
-             <ul>
-               <li>An element that can contain other elements or 
-               content</li>
-               <li>A paragraph (&lt;p>) contains text</li>
-              </ul>
-          </li>
-          <li class = "fragment">
-            <strong class="blue">Stand Alone Element</strong>
-            <ul>
-              <li>An element that cannot contain anything else</li>
-              <li>
-<pre><code class = "html">&lt;br/>
-&lt;img/> 
-</code></pre>
-              </li>
-            </ul>
-        </section>
-        
-		<section>
-			<h3>Anatomy of an HTML element</h3>
-			<ul>
-				<li class = "fragment">
-					<strong class="blue">Attribute</strong>
+				<!-- Welcome-->
+				<section class="hide-pdf">
+					<h3>&iexcl;Bienvenido!</h3>
+					<div class = "left-align">
+					<p>Girl Develop It fue creado para proveer clases asequibles en precio y horario, con el objetivo de ense&ntilde;ar a programar a trav&eacute;s de clases presenciales y pr&aacute;cticas.</p>
+					<br/>
+					<p class ="green">Algunas "reglas":</p>
 					<ul>
-						<li>Provides additional information about the HTML element</li>
-						<li>Class, ID, language, style, identity, source</li>
-						<li>Placed inside an opening tag, before the right angle bracket.</li>
+						<li>&iexcl;Estamos aqu&iacute; para cuando nos necesites!</li>
+						<li>Cualquier pregunta es importante</li>
+						<li>Debemos ayudarnos entre nosotros</li>
+						<li>Vamos a divertirnos aprendiendo</li>
 					</ul>
-				</li>
-				<li class="fragment">
-					<strong class="blue">Value</strong>
+					</div>
+				</section>
+
+				<section>
+					<h3>&iexcl;Bienvenido!</h3>
+					<div class = "left-align">
+					<p class = "blue">Hablame un poco sobre ti.</p>
 					<ul>
-					<li>Value is the value assigned to a given attribute.</li>
-					<li>Values must be contained inside quotation marks.</li>
-					<li>
+						<li>&iquest;Cu&aacute;l es tu nombre?</li>
+						<li>&iquest;Que tu esperas aprender en esta clase?</li>
+						<li>&iquest;Cu&aacute;l es tu lugar favorito para irte de vacaciones?</li>
+
+					</ul>
+					</div>
+				</section>
+
+				<!-- What is HTML?-->
+				<section>
+					<h3>&iquest;Qu&eacute; es HTML?</h3>
+					<p>HTML es el c&oacute;digo que nos permite crear p&aacute;ginas Web</p>
+					<img src = "images/homepage-view.png">
+				</section>
+
+				<section>
+					<h3>&iquest;Qu&eacute; es HTML?</h3>
+					<p>Si miras una Web por dentro, as&iacute; es como luce</p>
+					<img src = "images/homepage-html.png">
+				</section>
+
+				<!-- History of HTML-->
+				<section>
+					<h3>Historia del HTML</h3>
+					<ul>
+						<li class = "fragment">Creado por Tim Berners-Lee</li>
+						<li class = "fragment">Creado con la idea de compartir art&iacute;culos cient&iacute;ficos</li>
+						<li class = "fragment">La primera Web fue creada el 6 de agosto de 1991</li>
+						<li class = "fragment">Ahora es un estandar del W3 Consortium</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Historia del HTML</h3>
+					<ul>
+						<li class = "fragment"><span class = "yellow">H</span>yper<span class = "yellow">T</span>ext <span class = "yellow">M</span>arkup <span class = "yellow">L</span>anguage</li>
+						<li class = "fragment">Naci&oacute; a principio de los 90</li>
+						<li class = "fragment">HTML 4 creado en el 1997</li>
+						<li class = "fragment">XHTML creado en el 2000</li>
+						<li class = "fragment">HTML 5 creado en el 2008</li>
+					</ul>
+				</section>
+
+				<!-- Terms-->
+				<section>
+				 <h3>Glosario</h3>
+				 <ul>
+					 <li>
+						<div class = "green">Web design (Dise&ntilde;o Web)</div>
+						<div>El proceso de planificar, estructurar y crear una Web</div>
+					 </li>
+					 <li>
+						<div class = "green">Web development (Desarrollo Web)</div>
+						<div>El proceso de programar Webs din&aacute;micas</div>
+					 </li>
+					 <li>
+						<div class = "green">Front end</div>
+						<div>Los elementos de una Web que son visibles al usuario</div>
+					 </li>
+					 <li>
+						<div class = "green">Back end</div>
+						<div>Los elementos internos de una Web que le permiten dar servicio a sus usuarios</div>
+					 </li>
+				 </ul>
+				</section>
+
+				<section>
+					<h3>Herramientas</h3>
+					<ul>
+						<li>
+							<div class = "yellow">Browser (Navegador Web)</div>
+							<div>Chrome</div>
+							<div>Firefox</div>
+						 </li>
+						 <li>
+							<div class = "yellow">Development Toolkit</div>
+							<div>Chrome - Inspector</div>
+							<div>Firefox - Firebug</div>
+						 </li>
+						 <li>
+							<div class = "yellow">Editor de Texto</div>
+							<div>TextWrangler - Mac</div>
+							<div>Notepad ++ - Windows</div>
+							<div>Sublime Text - Linux, Mac or Windows</div>
+							<div>gedit - Linux</div>
+						 </li>
+					</ul>
+				</section>
+				<section>
+					<h3>Manos a la obra: Estructura de ficheros</h3>
+					<p>Todos los archivos deben estar en la misma carpeta</p>
+
+					<div class="left" style="width: 45%;">
+					<p class="left-align"><strong>Esto incluye:</strong></p>
+					<ul>
+						<li>Archivos HTML</li>
+						<li>Archivos CSS</li>
+						<li>Im&aacute;genes</li>
+						<li>Archivos de c&oacute;digo</li>
+						<li>Cualquier otro archivo a incluir en la Web</li>
+					</ul>
+					<p class="left-align"><small>Nota: Los nombres de archivo no deben tener espacios o caracteres especiales, y se distingue entre mayúsculas y minúsculas.</small></p>
+					</div>
+					<div class="right" style="width: 45%;">
+						<img src="images/folderstructure1.png" />
+					</div>
+				</section>
+
+				<section>
+					<h3>&iquest;Cual es el plan de hoy?</h3>
+					<div class="left left-align" style="width: 45%;">
+						<p>Hoy vamos a aprender como crear una Web desde cero, usando:</p>
+						<ul>
+							<li>Encabezados</li>
+							<li>P&aacute;rrafos</li>
+							<li>Links (hiperv&iacute;nculos)</li>
+							<li>y Listas</li>
+						</ul>
+					</div>
+					<div class="right" style="width: 45%;">
+						<img src="images/session1site.png"/>
+					</div>
+				</section>
+
+				<!-- Roles of HTML v CSS -->
+				<section>
+					<h3>Anatom&iacute;a de una Web</h3>
+					<div class = "blue"> Contenido</div>
+					<div><span class = "blue">+ HTML: </span>Estructura</div>
+					<div><span class = "blue">+ CSS: </span>Presentaci&oacute;n</div>
+					<div class = "blue">= Tu P&aacute;gina Web</div>
+					<p>Una Web es una manera de mostrar tu contenido al mundo, usando HTML para mostrar el contenido y CSS para hacerlo lucir bien.</p>
+				</section>
+
+				<section>
+					<h3>Anatom&iacute;a de una Web</h3>
+					<div class = "yellow">Ejemplo en concreto</div>
+					<ul>
+						<li class ="fragment"><p>Un texto es tu contenido</p></li>
+						<li class = "fragment">
+							<div style = "font-size: 80%">Poniendo el contenido dentro de una etiqueta de HTML lo hace lucir como un p&aacute;rrrafo; eso es Estructura</div>
+<pre><code class ="html">&lt;p>El contenido, ahora con Estructura&lt;/p></code></pre>
+					</li>
+					<li class = "fragment">
+						<div style = "font-size: 80%">Hacer el p&aacute;rrafo azul y de 18pt es Presentaci&oacute;n</div>
+						<p class ="blue">El contenido, con Estructura y Presentaci&oacute;n</p>
+					</li>
+				</section>
+
+				<!-- HTML element-->
+				<section>
+				 <h3>Anatom&iacute;a de una Web</h3>
+				 <ul>
+					 <li class = "fragment">
+						 <strong class="blue">Elemento</strong>
+						 <ul>
+							 <li>Un componente de HTML</li>
+							 <li>Un p&aacute;rrafo, una lista, una tabla, una imagen, etc.</li>
+							</ul>
+					</li>
+					<li class = "fragment">
+						<strong class="blue">Etiqueta</strong>
+						<ul>
+							<li>Denotan el inicio y el final de un elemento</li>
+							<li>Las etiquetas generalmente se abren y se cierran</li>
+						</ul>
+<pre><code class ="html">&lt;tagname>Stuff in the middle&lt;/tagname></code></pre>
+<pre><code class ="html">&lt;p> This is a sample paragraph.&lt;/p></code></pre>
+					 </li>
+					</ul>
+				</section>
+				<!--anatomy of a tag -->
+
+				<section>
+					<h3>Una Etiqueta por dentro</h3>
+					<img src="images/tagbreakdown.png" alt="Tag breakdown" style="border: none; box-shadow: none; width: 500px;" />
+				</section>
+
+				<section>
+					<h3>Tipo de Elementos HTML</h3>
+					<ul>
+						<li class = "fragment">
+							<strong class="blue">Elemento contenedor</strong>
+							<ul>
+								<li>Un elemento que contiene otro(s) elemento(s) dentro</li>
+								<li>
+<pre><code class = "html">&lt;p>Hola Mundo&lt;/p>
+&lt;p>Hola &lt;b>Mundo&lt;/b>&lt;/p></code></pre>
+								</li>
+							</ul>
+						</li>
+						<li class = "fragment">
+							<strong class="blue">Elemento independiente</strong>
+							<ul>
+								<li>Un elemento que no puede contenter ningun otro elemento dentro</li>
+								<li>
+<pre><code class = "html">&lt;br/>
+&lt;img/>
+</code></pre>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Anatom&iacute;a de un elemento HTML</h3>
+					<ul>
+						<li class = "fragment">
+							<strong class="blue">Atributos</strong>
+							<ul>
+								<li>Brinda informaci&oacute;n adicional sobre el elemento</li>
+								<li>Class, ID, language, style, identity, source</li>
+								<li>Se escribe dentro de la etiqueta que abre el elemento</li>
+							</ul>
+						</li>
+						<li class="fragment">
+							<strong class="blue">Valor</strong>
+							<ul>
+								<li>Valor es el contenido asignado al atributo</li>
+								<li>El valor debe ser escrito dentro de comillas</li>
+								<li>
 <pre><code class ="html">&lt;div id="copyright">&copy; GDI 2013&lt;/div>
-&lt;img src="my_picture.jpg" /> 
+&lt;img src="my_picture.jpg" />
 &lt;a href="http://girldevelopit.com">GDI&lt;/a>
 </code></pre>
-              </li>
-				</li>
-			</ul>
-		</section>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
 
-        <!-- HTML Page-->
-        <section>
-        <h3>Doctype</h3>
-        <p>The ﬁrst thing on an HTML page is the doctype, which tells the browser which version of the markup language the page is using.</p>
-        <pre><code class = "html">
-          &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML
-          4.01 Transitional//EN" "http://
-          www.w3.org/TR/html4/loose.dtd">
-        </code></pre>
-        <pre><code class = "html">
-          &lt;!DOCTYPE html>
-        </code></pre>
-        <p><small>* The doctype is case-insensitive. <br/>DOCtype, doctype, DocType and DoCtYpe are all valid.</small></p>
-        </section>
-        
-        <section>
-          <h3>HTML Tag</h3>
-          <p>After &lt;!doctype>, the page content must be
-          contained between &lt;html> tags.</p>
-          <pre><code class = "html">
-            &lt;!DOCTYPE html>
-            &lt;html>
+				<!-- HTML Page-->
+				<section>
+					<h3>Doctype</h3>
+					<p>El primer elemento de una Web es el Doctype, el cual le dice al Navegador que versi&oacute;n de HTML debe usar.</p>
+<pre><code class = "html">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"></code></pre>
+<pre><code class = "html">&lt;!DOCTYPE html></code></pre>
+				</section>
 
-            &lt;/html>
-          </code></pre>
-        </section>
-        
-        <section>
-          <h3>Head and Body Tags</h3>
-          <div class = "left-align">
-            <p class = "fragment"><span class="green">Head:</span> The head contains the title of the page &amp; meta information about the page. Meta information is not visible to the user, but has many purposes One of which is to tell search engines about your page, who created it, and a description. </p>
-            <p class = "fragment"><span class="green">Body:</span> The body contains the actual content of the page. Everything that is contained in the body is visible to the user.</p>
-          </div>
-        </section>
-        <!--example of head and body tags-->
-        <section>
-        	<h3>Head and Body Tags: Example</h3>
-        	<img src="images/example-headbody.png" alt="example of head and body" />
-        </section>
-        <section>
-          <h3>Head and Body Tags</h3>
-          <pre><code class = "html">
-            &lt;!DOCTYPE html>
-            &lt;html>
-               &lt;head>
-                &lt;title>Title of the page &lt;/title>
-               &lt;/head>
-               &lt;body>
-                The page content here.
-               &lt;/body>
-            &lt;/html>
-          </code></pre>
-        </section>
-        
-        <!-- Develop it -->
-        <section class="hide-pdf">
-        	<h3>Let's develop it!</h3>
-        	<p>Let's get our web page set up with a doctype, head, title and body.</p>
-        	<p>Later we'll add some content to it!</p>
-        </section>       
-        <!-- Nesting-->
-        <section>
-          <h3>Nesting</h3>
-          <p>All elements "nest" inside one another</p>
-          <p><small>Nesting is what happens when you put other containing tags inside other containing tags. For example, you would put the &lt;p> inside of the &lt;body> tags. The &lt;p> is now nested inside the &lt;body></small></p>
-          <img src = "images/owls.jpg"/>
-          
-          <p>Whichever element OPENS first CLOSES last</p>
-        </section>
-        
-        <!--example of nesting -->
-        <section>
-        	<h3>Nesting: Example</h3>
-        	<p>Elements are 'nested' inside the &lt;body&gt; tag.</p>
-        	<pre><code>
-        	&lt;body&gt;
-        	   &lt;p&gt;A paragraph inside the body tag&lt;/p&gt;
-        	&lt;/body&gt;
-        	</code></pre>
-        	<p>Paragraphs 'nested' inside list items.</p>
-        	<pre><code>
-        	&lt;ul&gt;
-        	   &lt;li&gt;
-        	      &lt;p&gt;A paragraph inside a list item&lt;/p&gt;
-        	   &lt;/li&gt;
-        	&lt;/ul&gt;
-        	</code></pre>
-        </section>
-        <!-- Elements -->
-        <!-- Paragraphs-->
-        <section>
-          <h3>Element: Paragraph</h3>
-          <div>
-          <div class = "left" style = "width:50%">
-<pre><code>
-  &lt;p>Paragraph 1&lt;/p>
-  &lt;p>Paragraph 2&lt;/p>
-  &lt;p>Paragraph 3&lt;/p>
-</code></pre>
-<pre><code>
-  &lt;p>Paragraph 1&lt;/p> &lt;p>Paragraph 2&lt;/p>  &lt;p>Paragraph 3&lt;/p>
-</code></pre>
-<pre><code>
-  &lt;p>Paragraph 1&lt;/p> 
-  
-  
-  &lt;p>Paragraph 2&lt;/p>  
-  &lt;p>Paragraph 3&lt;/p>
-</code></pre>
-          </div>
-          <div>
-          <p>Paragraph 1</p>
-          <p>Paragraph 2</p>
-          <p>Paragraph 3</p>
-          
-          </div>
-          <div class ="clear"></div>
-          <p><small>* White space is only for humans!</small></p>
-          </div>
-        </section>
-        
-        <section>
-        	<h3>Example: Paragraphs</h3>
-        	<p>Paragraphs allow you to format your content in a readable fashion.</p>
-        	<img src="images/example-paragraphs.png" alt="Example of Paragraphs in the wild" />
-        	<p><small>* You can edit how paragraphs are displayed with CSS</small></p>
-        </section>
-        
-        <!-- Headings-->
-        <section>
-          <h3>Element: Heading</h3>
-          <div>
-          <div class = "left" style = "width:50%">
-<pre><code>
-  &lt;h1>Heading 1&lt;/h1>
-  &lt;h2>Heading 2&lt;/h2>
-  &lt;h3>Heading 3&lt;/h3>
-  &lt;h4>Heading 4&lt;/h4>
-  &lt;h5>Heading 5&lt;/h5>
-  &lt;h6>Heading 6&lt;/h6>
-</code></pre>
-          </div>
-          <div class = "left" style = "width:50%">
-            <h1 style = "font-size: 120%">Heading 1</h1>
-            <h2 style = "font-size: 110%">Heading 2</h2>
-            <h3 style = "font-size: 105%">Heading 3</h3>
-            <h4 style = "font-size: 95%">Heading 4</h4>
-            <h5 style = "font-size: 85%">Heading 5</h5>
-            <h6 style = "font-size: 75%">Heading 6</h6>
-          </div>
-          <div class ="clear"></div>
-          <p>* Heading number indicates hierarchy, not size. Think: Outlines from high school papers</p>
-          </div>
-        </section>
-        
-        <!--heading examples-->
-        <section>
-        	<h3>Example: Headings</h3>
-        	<img src="images/example-headings.png" alt="Example of headings" />
-        </section>
-        <!-- Em and Strong-->
-        <section>
-          <h3>Formatted text</h3>
-          <div>
-          <div class = "left" style = "width:50%">
-<pre><code>
-&lt;p>
-  Here is a paragraph with &lt;em>Emphasized&lt;/em> text and &lt;strong>Important&lt;/strong> text.
-&lt;/p>
-</code></pre>
-          </div>
-          <div class = "left left-align" style = "width:50%">
-            <p>
-              Here is a paragraph with <em>Emphasized</em> text and <strong>Important</strong> text.
-            </p>
-          </div>
-          <div class ="clear"></div>
-          <br/>
-          <br/>
-          <p>* Notice: em and strong are meant to indicate meaning through code. If you want to have italicized for style appearance and not to communicate meaning, you should use CSS.</p>
-          </div>
-        </section> 
-<!--develop it!-->
-		<section  class="hide-pdf">
-			<h3>Let's Develop it!</h3>
-			<p class="left-align">Let's add some content to our site!</p>
-			<p class="left-align">Add one of each level of heading with 1-2 short paragraphs of text below each heading. </p>
-			<p class="left-align">Create some <em>emphasized</em> and <strong>strong</strong> text within a few paragraphs.</p>
-			
-		</section>
-		
-		<!-- Links-->
-        <section>
-          <h3>Element: Link</h3>
-          <p>Links have three components</p>
-          <ul>
-            <li>Tag: &lt;a>&lt;/a></li>
-            <li>Href attribute: "http://www.girldevelopit.com"</li>
-            <li>Title attribute: "Girl Develop It"</li>
-          </ul>
-<pre><code>
-&lt;a href="http://www.girldevelopit.com" title="Girl Develop It Homepage">GDI&lt;/a>
-</code></pre>
-        <p><a href="http://www.girldevelopit.com" title="Girl Develop It Homepage">GDI</a></p>
-        <p>The &lt;a&gt; tag surrounds text or images to turn them into links</p>
-        </section>
-        
-        <!-- Link Attributes -->
-        <section>
-        	<h3>Link Attributes</h3>
-        	<p>Links can have attributes that tell the link to do different actions like open in a new tab, or launch your e-mail program.</p>
-        	<pre><code>
-&lt;a href="home.html" target="_blank">Link Text&lt;/a>
-        	</code></pre>
-        	<p><small>Link opens in a new window/tab with <strong>target="_blank"</strong></small></p>
-        	<!-- Change email to fit your chapter's needs-->
-        	<pre><code>
-&lt;a href="mailto:info@girldevelopit.com">E-mail us!&lt;/a>
-        	</code></pre>
-        	<p><small>Link opens mail program by inserting <strong>mailto:</strong> directly before the email address.</small></p>
+				<section>
+					<h3>Etiqueta HTML</h3>
+					<p>Despu&eacute;s del &lt;!doctype>, la sigiuente etiqueta a escribir siempre debe ser &lt;html></p>
+<pre><code class = "html">&lt;!DOCTYPE html>
+&lt;html>
+&lt;/html></code></pre>
+				</section>
 
-        </section>
-        <!-- relative & absolute links -->
-        <section>
-        	<h3>Relative vs. Absolute paths for links & images</h3>
-        	<ul>
-        		<li>
-        		<strong class="blue">Relative</strong>
-        			<ul>
-        				<li>Relative paths change depending upon the page the link is on.
-        					<ul>
-        						<li><small>Links within the same directory need no path information. <code class="blue">"filename.jpg"</code></small></li>
-        						<li><small>Subdirectories are listed without preceding slashes. <code class="blue">"images/filename.jpg"</code></small></li>
-        					</ul>
-        				</li>
-        			</ul>
-        		</li>
-        		<li>
-        			<strong class="blue">Absolute</strong>
-    				<ul>
-    					<li>Absolute paths refer to a specific location of a file, including the domain. <small><code class="blue">"https://www.girldevelopit.com/chapters/los-angeles"</code></small></li>
-    					</li>
-    					<li>Typically used when pointing to a link that is not within your own domain.</li>
-    				</ul>
-        		</li>	
-        	</ul>
-        </section>
-        <!-- Lets develop it-->
-        <section class="hide-pdf">
-        	<h3>Let's Develop It</h3>
-        	<p>Let's add links to our site!</p>
-        	<p>Add links that open in the same window, a new window and link to an e-mail address.</p>
-        </section>
-        
-        <!-- Images-->
-        <section>
-          <h3>Element: Image</h3>
-          <p>Images have three components</p>
-          <ul>
-            <li>Tag: &lt;img/></li>
-            <li>Src attribute: "http://wilt.xyz/pink-logo.png"</li>
-            <li>Alt attribute: "Girl Develop It logo"</li>
-          </ul>
-<pre><code>
-&lt;img src ="http://wilt.xyz/pink-logo.png" alt = "Girl Develop It Logo"/>
-</code></pre>
-<img src ="http://wilt.xyz/pink-logo.png" alt = "Girl Develop It Logo"/>
-          <p><small>* Notice: This tag is our first example of a stand-alone or "self-closing" element.</small></p>
+				<section>
+					<h3>Etiquetas Head y Body</h3>
+					<div class = "left-align fragment">
+						<strong class="blue">HEAD</strong>
+						<p>Dentro de la etiqueta &lt;heat> se encuenta el t&iacute;tulo de la Web e informaci&oacute;n sobre su creador, idioma, etc. El contenido de esta seccion no es visible al visitante.
+					</div>
+					<div class = "left-align fragment">
+						<strong class="blue">HEAD</strong>
+						<p>La etiqueta &lt;body> contiene todos los elementos que constituyen la Web en si. Todo lo contenido en el body es visible al visitante.</p>
+					</div>
+				</section>
 
-        </section>
-        <!-- Line Break-->
-        <section>
-          <h3>Element: Line Break</h3>
-          <div>
-          <div class = "left" style = "width:50%">
-<pre><code>
-&lt;p>
-  Imagine there's no Heaven &lt;br/>
-  It's easy if you try &lt;br/>
-  No hell below us  &lt;br/>
-  Above us only sky
-&lt;/p>
-</code></pre>
-          </div>
-          <div class = "left left-align" style = "width:50%">
-            <p>
-            Imagine there's no Heaven <br/>
-            It's easy if you try <br/>
-            No hell below us  <br/>
-            Above us only sky
-            </p>
-          </div>
-          <div class ="clear"></div>
-          <br/>
-          <br/>
-          </div>
-        </section>
-        
-        <!-- Develop it! -->
-        <section>
-        	<h3>Let's Develop It!</h3>
-        	<p>Let's add some images and line breaks to our page.</p>
-        	<p>We can even turn our images into links!</p>
-        </section>
-        <!-- Lists-->
-        <section>
-          <h3>Element: Unordered and ordered lists</h3>
-          <div>
-          <div class = "left" style = "width:50%">
-<pre><code>
-  &lt;ul>
-    &lt;li>List Item&lt;/li>
-    &lt;li>AnotherList Item&lt;/li>
-  &lt;/ul>
-</code></pre>
-<pre><code>
-  &lt;ol>
-    &lt;li>List Item&lt;/li>
-    &lt;li>AnotherList Item&lt;/li>
-  &lt;/ol>
-</code></pre>
-          </div>
-          <div class = "left" style = "width:50%">
-            <p>Unordered list (bullets)
-            <ul>
-              <li>List Item</li>
-              <li>AnotherList Item</li>
-            </ul>
-            <br/>
-            <br/>
-            <p>Ordered list (sequence)
-            <ol>
-              <li>List Item</li>
-              <li>AnotherList Item</li>
-            </ol>
-          </div>
-          <div class ="clear"></div>
-          </div>
-        </section>
-        
-        <!-- example of lists -->
-        <section>
-        	<h3>Lists: Examples</h3>
-        	<p>Lists can be used to organize any list of items.</p>
-        	<img src="images/example-lists.png" alt="Examples of lists"/>
-        	<p><small>You'd be surprised how often lists are used in web design.</small></p>
-        </section>
-        
-        <!-- Develop it!-->
-        <section class="hide-pdf">
-        	<h3>Let's Develop it!</h3>
-        	<p>Let's add one of each ordered and unordered lists to our page.</p>
-        	<p>We can make a list of links or even a list of images!</p>
-        </section>
-        <!--Comments-->
-        <section>
-        	<h3>Comments</h3>
-        	<p>You can add comments to your code that will not be seen by the browser, but only visible when viewing the code.</p>
-        	<pre><code>
-&lt;!-- Comment goes here -->
-        	</code></pre>
-        	<p><small>Comments can be used to organize your code into sections so you (or someone else) can easily understand your code. It can also be used to 'comment out' large chunks of code to hide it from the browser.</small></p>
-        	<pre><code>
-&lt;!-- Beginning of header -->
-   &lt;div id="header">Header Content &lt;/div>
-&lt;!-- End of header -->
+				<section>
+					<h3>Etiquetas Head y Body</h3>
+<pre><code class = "html">&lt;!DOCTYPE html>
+&lt;html>
+	 &lt;head>
+		&lt;title>Title of the page &lt;/title>
+	 &lt;/head>
+	 &lt;body>
+		The page content here.
+	 &lt;/body>
+&lt;/html></code></pre>
+				</section>
 
-&lt;!--   
-  &lt;ol>
-    &lt;li>List Item&lt;/li>
-    &lt;li>Another List Item&lt;/li>
-  &lt;/ol> 
---> 
-        	</code></pre>
-        </section>        
-        
-        <section>
-          <h3>Tables</h3>
-          <p>Tables are a way to represent complex information in a grid format.</p>
-          <p>Tables are made up of rows and columns.</p>
-          
-          <div>
-          <div class = "left" style = "width:50%">
-<pre><code>
-&lt;table>
-  &lt;tr> 
-    &lt;th>Head&lt;/th>
-    &lt;th>Head&lt;/th>
-  &lt;/tr>
-  &lt;tr> 
-    &lt;td>Data&lt;/td>
-    &lt;td>Data&lt;/td>
-  &lt;/tr>
-&lt;/table>
-</code></pre>
-          </div>
-          <div class = "left left-align" style = "width:50%">
-            <table style="border: 1px solid">
-              <tr> 
-                <th style="border: 1px solid">Head</th>
-                <th style="border: 1px solid">Head</th>
-              </tr>
-              <tr> 
-                <td style="border: 1px solid">Data</td>
-                <td style="border: 1px solid">Data</td>
-              </tr>
-            </table>
-          </div>
-          <div class ="clear"></div>
-          </div>
-        </section>
-        
-        <!-- Table Examples -->
-        <section>
-        	<h3>Tables: Examples</h3>
-        	<p>Tables can be styled with CSS to add zebra striping or to highlight important rows/columns.</p>
-        	<img src="images/example-tables.png" alt="Example of tables" />
-        </section>
+				<!-- Develop it -->
+				<section class="hide-pdf">
+					<h3>&iexcl;Manos a la obra!</h3>
+					<p>Vamos a crear nuestra primera Web, la cual contendr&aacute; el doctype, head, title y el body con una linea de texto.</p>
+					<br/>
+					<p>Mas tarde agregremos muchos m&aacute;s elementos</p>
+				</section>
 
-        
-        <!-- Character codes-->
-        <section>
-          <h3>Character codes</h3>
-          <p>There are character codes for many different characters in many different languages</p>
-          <div class="left" style="width:50%">
-          <ul>
-            <li>Delta: &amp;delta; &delta;</li>
-            <li>Copyright symbol: &amp;copy; &copy;</li>
-            <li>Grave: &amp;grave; &grave;</li>
-            <li>An grave a: &amp;agrave; &agrave;</li>
-            <li>A full list is available at <a href="http://htmlandcssbook.com/extras/html-escape-codes/" target="_blank">htmlandcssbook.com</a></li>
-          </ul>
-          </div>
-          <div class="right" style="width: 50%;">
-          	<img src="images/example-characters.png" alt="Example of Characters"/>
-          </div>
-          
-        </section>        <!-- -->
-        <section>
-          <h2>Questions?</h2>
-          <div style = "font-size:1200%; height:100%; margin-top:40%" class ="blue">?
-            <div class ="clear"></div></div>
-        </section>
+
+				<!-- Nesting-->
+				<section>
+					<h3>Elementos anidados</h3>
+					<p>En HTML, un elemento puede contenter otros elementos. Por ejemplo, un &lt;p> debe estar dentro del &lt;body></p>
+					<img src = "images/owls.jpg" style="width:300px;"/>
+				</section>
+
+				<!--example of nesting -->
+				<section>
+					<h3>Ejemplo de anidaci&oacute;n</h3>
+					<p>Elementos "anidados" dentro del elemento &lt;body&gt;.</p>
+<pre><code>&lt;body&gt;
+	 &lt;p&gt;Un p&aacute;rafo dentro del body&lt;/p&gt;
+&lt;/body&gt;</code></pre>
+					<p>P&aacute;rrafos "anidados" dentro de una lista.</p>
+<pre><code>&lt;ul&gt;
+	&lt;li&gt;
+		&lt;p&gt;Un p&aacute;rafo dentro de una lista&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+				</section>
+				<!-- Elements -->
+
+				<!-- Paragraphs-->
+				<section>
+					<h3>Elemento: P&aacute;rrafo</h3>
+					<div>
+						<div class = "left" style = "width:50%">
+<pre><code>&lt;p>P&aacute;rrafo 1&lt;/p>
+&lt;p>P&aacute;rrafo 2&lt;/p>
+&lt;p>P&aacute;rrafo 3&lt;/p></code></pre>
+<pre><code>&lt;p>P&aacute;rrafo 1&lt;/p> &lt;p>P&aacute;rrafo 2&lt;/p>  &lt;p>P&aacute;rrafo 3&lt;/p></code></pre>
+<pre><code>&lt;p>P&aacute;rrafo 1&lt;/p>
+
+&lt;p>P&aacute;rrafo 2&lt;/p>
+&lt;p>P&aacute;rrafo 3&lt;/p></code></pre>
+						</div>
+						<div>
+							<p>P&aacute;rrafo 1</p>
+							<p>P&aacute;rrafo 2</p>
+							<p>P&aacute;rrafo 3</p>
+						</div>
+						<div class ="clear"></div>
+						<p><small>* Los espacios y saltos de l&iacute;nea son opcionales</small></p>
+					</div>
+				</section>
+
+				<section>
+					<h3>Ejemplo de p&aacute;rrafos</h3>
+					<p>Los p&aacute;rrafos permiten mostrar texto de forma las legible.</p>
+					<img src="images/example-paragraphs.png" alt="Example of Paragraphs in the wild" />
+					<p><small>* Se puede cambiar como lucen los p&aacute;rrafos usando CSS</small></p>
+				</section>
+
+				<!-- Headings-->
+				<section>
+					<h3>Elemento: Cabeceras</h3>
+					<div>
+						<div class = "left" style = "width:50%">
+<pre><code>&lt;h1>Cabecera 1&lt;/h1>
+&lt;h2>Cabecera 2&lt;/h2>
+&lt;h3>Cabecera 3&lt;/h3>
+&lt;h4>Cabecera 4&lt;/h4>
+&lt;h5>Cabecera 5&lt;/h5>
+&lt;h6>Cabecera 6&lt;/h6></code></pre>
+						</div>
+						<div class = "left" style = "width:50%">
+							<h1 style = "font-size: 120%">Cabecera 1</h1>
+							<h2 style = "font-size: 110%">Cabecera 2</h2>
+							<h3 style = "font-size: 105%">Cabecera 3</h3>
+							<h4 style = "font-size: 95%">Cabecera 4</h4>
+							<h5 style = "font-size: 85%">Cabecera 5</h5>
+							<h6 style = "font-size: 75%">Cabecera 6</h6>
+						</div>
+						<div class ="clear"></div>
+						<p>* EL n&uacute;mero de la cabecera indica la importancia, no el tama&ntilde;o. Piensa en los cap&iacute;tulos y ep&iacute;grafes de un libro</p>
+					</div>
+				</section>
+
+				<!--heading examples-->
+				<section>
+					<h3>Ejemplo de cabeceras</h3>
+					<img src="images/example-headings.png" alt="Example of headings" />
+				</section>
+				<!-- Em and Strong-->
+				<section>
+					<h3>Texto con formato</h3>
+					<div>
+						<div class = "left" style = "width:50%">
+<pre><code>&lt;p>Esto es un p&aacute;rrafo &lt;em>texto resaltado&lt;/em> y &lt;strong>en negritas&lt;/strong>.&lt;/p></code></pre>
+						</div>
+						<div class = "left left-align" style = "width:50%; margin-top:30px;">
+							<p>Esto es un p&aacute;rrafo <em>texto resaltado</em> y <strong>en negritas</strong>.</p>
+						</div>
+						<div class ="clear"></div>
+						<br/>
+						<br/>
+						<p>* Es m&aacute;s correcto usar CSS para hacer cambios en el estilo de nuestra p&aacute;gina web.</p>
+					</div>
+				</section>
+
+				<!--develop it!-->
+				<section  class="hide-pdf">
+					<h3>&iexcl;Manos a la obra!</h3>
+					<p class="left-align">Vamos a agregar un poco de contenido a nuestra web.</p>
+					<p class="left-align">Agrega cabeceras de cada diferente nivel, cada una acompa&ntilde;ada de un p&aacute;rrafo.</p>
+					<p class="left-align">Agrega algunas frases <em>con importancia</em> y otras <strong>en negrita</strong>.</p>
+				</section>
+
+				<!-- Links-->
+				<section>
+					<h3>Elemento: V&iacute;nculo</h3>
+					<p>Los v&iacute;nculos tienen tres componentes:</p>
+					<ul>
+						<li>Etiqueta: &lt;a>&lt;/a></li>
+						<li>Direcci&oacute;n: "http://www.girldevelopit.com"</li>
+						<li>Ancla "Girl Develop It"</li>
+					</ul>
+<pre><code>&lt;a href="http://www.girldevelopit.com">Girl Develop It&lt;/a></code></pre>
+					<p><a href="http://www.girldevelopit.com">Girl Develop It Homepage</a></p>
+					<p>Las etiquetas &lt;a&gt; rodean el "Ancla", que es el texto que se muestra en el link</p>
+				</section>
+
+				<!-- Link Attributes -->
+				<section>
+					<h3>Atributos del link</h3>
+					<p>Los links pueden ser configurados para abrir en otra pesta&ntilde;a, o para enviar un email.</p>
+<pre><code>&lt;a href="home.html" target="_blank">Texto ancla&lt;/a></code></pre>
+					<p><small>El contenido de este v&iacute;nculo se abrir&aacute; en otra pesta&ntilde;a</small></p>
+					<!-- Change email to fit your chapter's needs-->
+<pre><code>&lt;a href="mailto:info@girldevelopit.com">Manda un e-mail!&lt;/a></code></pre>
+					<p><small>Este v&iacute;nculo enviar&aacute; un email en vez de abrir una p&aacute;gina web.</small></p>
+				</section>
+
+				<!-- relative & absolute links -->
+				<section>
+					<h3>Camino absoluto y relativo del v&iacute;nculo</h3>
+					<ul>
+						<li>
+							<strong class="blue">Relativo</strong>
+							<ul>
+								<li>Los caminos relativos dependen de la p&aacute;gina donde el v&iacute;nculo se encuentra.
+									<small>
+										<ul>
+											<li>Recursos en el mismo directorio de la p&aacute;gina. <code class="blue">"archivo.jpg"</code></li>
+											<li>Recursos en subdirectorios despu&eacute;s de la p&aacute;gina. <code class="blue">"imagenes/archivo.jpg"</code></li>
+										</ul>
+									</small>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong class="blue">Absoluto</strong>
+							<ul>
+								<li>Los caminos absolutos se refieren a la localizaci&oacute;n especifica del archivo, incluyendo el dominio. <small><code class="blue">"https://www.girldevelopit.com/chapters/miami-fort-lauderdale"</code></small>
+									<ul>
+										<li>Mayormente usado cuando se accede a recursos fuera de nuestro dominio.</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<!-- Lets develop it-->
+				<section class="hide-pdf">
+					<h3>&iexcl;Manos a la obra!</h3>
+					<p>Vamos a agregar v&iacute;nculos a nuestra p&aacute;gina web.</p>
+					<p>Agrega un v&iacute;nculo que apunte a "girldevelopit.com".</p>
+					<p>Agrega un v&iacute;nculo que abra otra web en otra pesta&ntilde;a.</p>
+					<p>Agrega un v&iacute;nculo que env&iacute;e un email.</p>
+				</section>
+
+				<!-- Images-->
+				<section>
+					<h3>Elemento: Imagen</h3>
+					<p>Las im&aacute;genes tienen tres componentes</p>
+					<ul>
+						<li>Etiqueta: &lt;img/></li>
+						<li>Fuente: "http://girldevelopit.com/assets/pink-logo.png"</li>
+						<li>Texto alternativo: "Logo de Girl Develop It"</li>
+					</ul>
+<pre><code>&lt;img src ="http://girldevelopit.com/assets/pink-logo.png" alt = "Logo de Girl Develop It"/></code></pre>
+					<img src ="http://girldevelopit.com/assets/pink-logo.png" alt = "Girl Develop It Logo"/>
+					<p><small>* Las im&aacute;genes son uno de los pocos elementos de HTML que no llevan una etiqueta de cierre.</small></p>
+				</section>
+
+				<!-- Line Break-->
+				<section>
+					<h3>Elemento: Salto de l&iacute;nea</h3>
+					<div>
+						<div class = "left" style = "width:50%">
+<pre><code>&lt;p>
+	Imagine there's no Heaven &lt;br/>
+	It's easy if you try &lt;br/>
+	No hell below us  &lt;br/>
+	Above us only sky
+&lt;/p></code></pre>
+						</div>
+						<div class = "left left-align" style = "width:50%; margin-top:20px;">
+							<p>Imagine there's no Heaven <br/>
+								It's easy if you try <br/>
+								No hell below us  <br/>
+								Above us only sky</p>
+						</div>
+						<p><small>
+							* Otro elemento que no lleva etiqueta de cierre.<br/>
+							* No se deben usar saltos de l&iacute;nea para separar elementos.
+						</small></p>
+						<div class ="clear"></div>
+						<br/>
+						<br/>
+					</div>
+				</section>
+
+				<!-- Develop it! -->
+				<section>
+					<h3>&iexcl;Manos a la obra!</h3>
+					<p>Vamos a agregar algunas im&aacute;genes a nuestra p&aacute;gina.</p>
+					<p>Vamos a agregar una poes&iacute;a o letra de canci&oacute;n, y usar saltos de l&iacute;nea para separar las estrofas</p>
+					<p>Vamos a hacer que una de nuestras im&aacute;genes se convierta en un v&iacute;nculo</p>
+				</section>
+
+				<!-- Lists-->
+				<section>
+					<h3>Elemento: Listas</h3>
+					<div>
+						<div class = "left" style = "width:50%">
+<pre><code>&lt;ul>
+	&lt;li>Papas&lt;/li>
+	&lt;li>Malanga&lt;/li>
+	&lt;li>Arroz&lt;/li>
+&lt;/ul></code></pre>
+<pre><code>&lt;ol>
+	&lt;li>Estudiar HTML&lt;/li>
+	&lt;li>Estudiar CSS&lt;/li>
+&lt;/ol></code></pre>
+						</div>
+						<div class = "left" style = "width:50%">
+							<p>Listas sin orden
+							<ul>
+								<li>Papas</li>
+								<li>Malanga</li>
+								<li>Arroz</li>
+							</ul>
+							<br/>
+							<br/>
+							<p>Listas con orden
+							<ol>
+								<li>Estudiar HTML</li>
+								<li>Estudiar CSS</li>
+							</ol>
+						</div>
+						<div class ="clear"></div>
+					</div>
+				</section>
+
+				<!-- example of lists -->
+				<section>
+					<h3>Ejemplo de listas</h3>
+					<p>Las listas organizan todo tipo de art&iacute;culos.</p>
+					<img src="images/example-lists.png" alt="Examples of lists"/>
+					<p><small>You'd be surprised how often lists are used in web design.</small></p>
+				</section>
+
+				<!-- Develop it!-->
+				<section class="hide-pdf">
+					<h3>&iexcl;Manos a la obra!</h3>
+					<p>Vamos a agregar una lista de cada tipo a nuestra p&acute;gina.</p>
+					<p>Vamos a crear una lista de v&iacute;nculos para la secci&oacute;n de contactos</p>
+				</section>
+
+				<!--Comments-->
+				<section>
+					<h3>Comentarios</h3>
+					<p>Los comentarios son solo visibles en el c&oacute;digo.</p>
+<pre><code>&lt;!-- Esto es un comentario --></code></pre>
+					<p><small>Los comentarios nos ayudar a escribir notas para otros que lean el c&oacute;digo, a organizar las secciones de la p&aacute;gina o a mantener c&oacute;digo a mano para ser usado en un futuro.</small></p>
+<pre><code>&lt;!-- inicio de la cabecera -->
+	&lt;div>Un estudio de los monos en Africa &lt;/div>
+&lt;!-- final de la cabecera -->
+
+&lt;!--
+	&lt;ol>
+		&lt;li>Pl&aacute;tanos&lt;/li>
+		&lt;li>Yuca&lt;/li>
+	&lt;/ol>
+--></code></pre>
+				</section>
+
+				<section>
+					<h3>Tablas</h3>
+					<p>Las tablas representan informaci&oacute;n en varias filas y columnas.</p>
+					<div>
+						<div class = "left" style = "width:50%">
+<pre><code>&lt;table>
+	&lt;tr>
+		&lt;th>Cabecera&lt;/th>
+		&lt;th>Cabecera&lt;/th>
+	&lt;/tr>
+	&lt;tr>
+		&lt;td>Informaci&oacute;n&lt;/td>
+		&lt;td>Informaci&oacute;n&lt;/td>
+	&lt;/tr>
+&lt;/table></code></pre>
+						</div>
+						<div class = "left left-align" style = "width:50%">
+							<table style="border: 1px solid">
+								<tr>
+									<th style="border: 1px solid">Cabecera</th>
+									<th style="border: 1px solid">Cabecera</th>
+								</tr>
+								<tr>
+									<td style="border: 1px solid">Informaci&oacute;n</td>
+									<td style="border: 1px solid">Informaci&oacute;n</td>
+								</tr>
+							</table>
+						</div>
+						<div class ="clear"></div>
+					</div>
+				</section>
+
+				<!-- Table Examples -->
+				<section>
+					<h3>Ejemplo de tablas</h3>
+					<p>Es com&uacute;n estilizar las tablas con CSS para agregar un mejor acabado, resaltar columnas importantes o pintar filas pares e impares de diferentes colores.</p>
+					<img src="images/example-tables.png" alt="Example of tables" />
+				</section>
+
+				<!-- Character codes-->
+				<section>
+					<h3>Caracteres especiales</h3>
+					<p>Como escribir los s&iacute;mbolos que normalmente no aparecen en el teclado, y las tildes del espa&ntilde;ol.</p>
+					<div class="left" style="width:50%">
+						<ul>
+							<li>&copy;: &amp;copy;</li>
+							<li>&cent;: &amp;cent;</li>
+							<li>&aacute;: &amp;aacute;</li>
+							<li>&eacute;: &amp;eacute;</li>
+							<li>&iacute;: &amp;iacute;</li>
+							<li>&oacute;: &amp;oacute;</li>
+							<li>&uacute;: &amp;uacute;</li>
+							<li>&ntilde;: &amp;ntilde;</li>
+							<li>La lista completa esta en: <a href="http://htmlandcssbook.com/extras/html-escape-codes/" target="_blank">htmlandcssbook.com</a></li>
+						</ul>
+					</div>
+					<div class="right" style="width: 50%;">
+						<img src="images/example-characters.png" alt="Example of Characters"/>
+					</div>
+				</section>
+
+				<section>
+					<h2>&iquest;Preguntas?</h2>
+					<div style = "font-size:1200%; height:100%; margin-top:40%" class ="blue">?
+						<div class ="clear"></div>
+					</div>
+				</section>
 			</div>
-  		<footer>
-        <div class="copyright">
-          HTML/CSS ~ Girl Develop It ~
-          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
-        </div>
-      </footer>
+			<footer>
+				<div class="copyright">
+					HTML/CSS ~ Girl Develop It ~
+					<a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+				</div>
+			</footer>
 		</div>
 
 
